@@ -1,0 +1,48 @@
+.modal_cancel_button {
+    .btn-primary {
+        background-color: $color-special-red;
+    }
+}
+
+.btn-primary:disabled {
+    background-color: $color-special-grey-light !important;
+}
+
+.modal_previous_button {
+        button {
+            background-color: $color-border !important;
+        }
+}
+
+.modal_button_negative {
+    .btn-primary {
+            background-color: $color-special-red !important;
+        }
+}
+
+.modal_button_affirmative {
+    .btn-primary {
+            background-color: $color-special-blue;
+        }
+}
+
+.round_button {
+    background-color: $color-special-red;
+    border-radius: 50rem;
+    color: $color-font;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    // text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1rem;
+    border: none;
+    margin: 1rem;
+    outline: none !important;
+
+    &:hover {
+        color: $color-special-blue;
+    }
+}

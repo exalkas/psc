@@ -1,0 +1,40 @@
+.system_message_container {
+    width: auto;
+    padding: 4rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: $border-radius-standard;
+    border: $border-post-blue;
+
+    
+    .system_message_top_row {
+        font-size: 1.5rem;
+        color: $color-special-blue;
+
+        h1 {
+            color: $color-special-blue;
+        }
+    }
+
+    .system_message_bottom_row {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+        color: $color-special-red;
+    }
+
+    hr {
+        color: $color-special-grey-dark;
+        height: 1px;
+        width: 100%;
+        padding: 0;
+    }
+
+    svg {
+        width: 3rem;
+        height: 3rem;
+        color: $color-special-blue;
+    }
+}
