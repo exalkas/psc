@@ -152,7 +152,7 @@ class ContactForm extends Component {
         if(formIsValid){
             console.log("SUBMITFORM: FORMISVALID! WILL SEND DISPATCH");
 
-            await axios.post('/email.submit', dataToSubmit)
+            await axios.post('/api/email.submit', dataToSubmit)
             .then( response => {
                 console.log('response=', response)
 

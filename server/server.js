@@ -16,7 +16,7 @@ app.use(express.static('client/build')) //It serves static files and is based on
 // UTILS
 const { sendEmail } = require('./utils/mail/index');
 
-app.get('/email.submit', async (req, res) => {
+app.post('/api/email.submit', async (req, res) => {
     try {
         console.log("------------------email.submit BEGINS--------------------");
         console.log("------------------email.submit req.body=", req.body);  
