@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.cc3d85f7.chunk.css",
+    "main.js": "/static/js/main.c5f9bbdb.chunk.js",
+    "main.js.map": "/static/js/main.c5f9bbdb.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e4165761.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e4165761.js.map",
+    "static/css/2.d58fcd6a.chunk.css": "/static/css/2.d58fcd6a.chunk.css",
+    "static/js/2.98247b5b.chunk.js": "/static/js/2.98247b5b.chunk.js",
+    "static/js/2.98247b5b.chunk.js.map": "/static/js/2.98247b5b.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ba07a8bc02c93c927d58067b3e27a725.js": "/precache-manifest.ba07a8bc02c93c927d58067b3e27a725.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.d58fcd6a.chunk.css.map": "/static/css/2.d58fcd6a.chunk.css.map",
+    "static/css/main.cc3d85f7.chunk.css.map": "/static/css/main.cc3d85f7.chunk.css.map",
+    "static/js/2.98247b5b.chunk.js.LICENSE.txt": "/static/js/2.98247b5b.chunk.js.LICENSE.txt",
+    "static/media/GarethBale.webp": "/static/media/GarethBale.990f4ad6.webp",
+    "static/media/LionelMessi.webp": "/static/media/LionelMessi.d2eb9ffd.webp",
+    "static/media/logo.webp": "/static/media/logo.2acf79c4.webp",
+    "static/media/neymar.webp": "/static/media/neymar.9b078fe7.webp",
+    "static/media/ronaldo.webp": "/static/media/ronaldo.1a0c3e42.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e4165761.js",
+    "static/css/2.d58fcd6a.chunk.css",
+    "static/js/2.98247b5b.chunk.js",
+    "static/css/main.cc3d85f7.chunk.css",
+    "static/js/main.c5f9bbdb.chunk.js"
+  ]
+}
