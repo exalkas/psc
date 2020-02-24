@@ -100,12 +100,13 @@ class Header extends Component {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
                         {/* <Nav.Link href="#home">{this.state.menu.home[this.state.locale]}</Nav.Link> */}
-                        <Nav.Link href="#home">{MENU.home[this.state.locale]}</Nav.Link>
+                        <Nav.Link href="/">{MENU.home[this.state.locale]}</Nav.Link>
                         <Nav.Link href="#link">{MENU.thePSC[this.state.locale]}</Nav.Link>
                         <Nav.Link href="#link">{MENU.joinPSC[this.state.locale]}</Nav.Link>
                         <Nav.Link href="#link">{MENU.purchaseGuide[this.state.locale]}</Nav.Link>
                         <Nav.Link href="#link">{MENU.buy[this.state.locale]}</Nav.Link>
                         <Nav.Link href="#link">{MENU.theFootbalMarket[this.state.locale]}</Nav.Link>
+                        <Nav.Link href="/news">{MENU.news[this.state.locale]}</Nav.Link>
                         <NavDropdown title={MENU.more[this.state.locale]} id="collasible-nav-dropdown" >
                             <NavDropdown.Item href="#action/3.2">{MENU.whoAreWe[this.state.locale]}</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">{MENU.contactUs[this.state.locale]}</NavDropdown.Item>

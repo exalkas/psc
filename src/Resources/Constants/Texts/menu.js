@@ -23,6 +23,10 @@ export const MENU = {
         en: "THE FOOTBAL MARKET",
         de: "DER FUSBALL MARKET"
     },
+    news: {
+        en: "NEWS",
+        de: "NACHRICHTEN"
+    },
     more: {
         en: "More...",
         de: "Mehr..."

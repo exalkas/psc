@@ -50,9 +50,11 @@ body {
   background-image: url("/images/background.webp");
   padding-bottom: 5rem; }
 
-@media only screen and (max-width: 56.25em) {
-  .page_container {
-    margin-top: 20rem; } }
+.page_container {
+  min-height: 100vh; }
+  @media only screen and (max-width: 56.25em) {
+    .page_container {
+      margin-top: 20rem; } }
 
 .bck_b_dark {
   background: #272723; }
@@ -501,3 +503,19 @@ header {
     bottom: 0;
     left: 4%;
     width: 36.8rem; }
+
+.news_container {
+  padding-top: 10rem; }
+  .news_container .newsitem_container {
+    padding: 5rem 15rem; }
+    .news_container .newsitem_container h2 {
+      color: #39d3db;
+      font-size: 3rem;
+      font-weight: 700; }
+    .news_container .newsitem_container h3 {
+      color: #e7eb05;
+      font-size: 2rem;
+      font-weight: 300; }
+    .news_container .newsitem_container p {
+      font-size: 1.5rem;
+      font-weight: 300; }

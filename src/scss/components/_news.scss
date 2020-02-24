@@ -1,0 +1,24 @@
+.news_container {
+    padding-top: 10rem;
+
+    .newsitem_container {
+        padding: 5rem 15rem;
+
+        h2 {
+            color: $font-color2;
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        h3 {
+            color: $font-color3;
+            font-size: 2rem;
+            font-weight: 300;
+        }
+
+        p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+    }
+}
