@@ -5,7 +5,7 @@ export const GraphicalOne = ({h2One = null, bottomOne = null, topTwo = null, h2T
     return (
         <div className = 'graphical_container' id='headerElement'>
             <div className='graphical_top'>
-                {/* <Zoom opposite > */}
+                <Zoom opposite >
                     <div className='h2s'>
                         {h2One && h2One.length > 0 ? 
                         h2One.map( (item, i) => <h2 key = {i}>{item}</h2>
@@ -13,27 +13,27 @@ export const GraphicalOne = ({h2One = null, bottomOne = null, topTwo = null, h2T
                         :null
                         }
                     </div>
-                {/* </Zoom> */}
+                </Zoom>
                 <h1>{bottomOne}</h1>
             </div>
             <div className='graphical_bottom'>
                 <h1>{topTwo}</h1>
                     
                     <div className='h2s'>
-                        {/* <Slide left> */}
+                        <Slide left>
                             {h2Two && h2Two.length > 0 ? 
                                 h2Two.map( (item, i) => <h2 key = {i}>{item}</h2>
                                 )
                             
                             :null
                             }
-                        {/* </Slide> */}
-                        {/* <Slide top> */}
+                        </Slide>
+                        <Slide top>
                             {showTriangle ? 
                                 <div className = 'triangle'></div>
                             :null
                             }
-                        {/* </Slide> */}
+                        </Slide>
                 </div>
             </div>
         </div>
