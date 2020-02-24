@@ -6,10 +6,6 @@ const welcome = user => {
       <!DOCTYPE html>
         <html style="margin: 0; padding: 0;">
         
-            <head>
-                <title>You have email from contact from /title>
-            </head>
-        
             <body style="margin: 0; padding: 0;">
                 <table class="table" cellpadding="0" cellspacing="0" style="background-color: #eee; empty-cells: hide; margin: 0 auto; padding: 0; width: 600px;">
                     <tr>
@@ -18,11 +14,11 @@ const welcome = user => {
                         </td>
                     </tr>
                     <tr>
-                        <td style="margin: 0 auto;">
+                        <td style="margin: 0 auto;padding-left: 2rem;">
                             <p>Name: ${user.name}</p>
                             <p>email: ${user.name}</p>
                             <p>subject: ${user.subject}</p>
-                            <p>mesasge: ${user.message}</p>
+                            <p>message: ${user.message}</p>
                         </td>
                     </tr>
                 </table>
