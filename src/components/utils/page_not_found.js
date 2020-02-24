@@ -1,22 +1,40 @@
 //Handle note found pages
-import React from 'react';
+import React, { Component } from 'react';
 
-// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import { NOTFOUNDTEXTS } from '../../Resources/Constants/Texts/not_found'
+
 import { FaExclamationCircle } from 'react-icons/fa';
-// import faExclamationCircle from '@fortawesome/fontawesome-free-solid/faExclamationCircle';
 
-const PageNotFound = () => {
-    return (
-        <div className="container">
-            <div className="not_found_container">
-                <FaExclamationCircle/>
-                {/* <FontAwesomeIcon icon={faExclamationCircle}/> */}
-                <div>
-                    Oops !! page not found
+class PageNotFound extends Component {
+
+    state = {
+        locale: 'en'
+    }
+
+    componentDidMount() {
+        
+        document.addEventListener('langChanged', this.handleLocale);
+
+        this.setState({locale: localStorage.getItem('lang_pref')})
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener('langChanged', this.loadTexts);
+    }
+
+    render() {
+        return (
+            <div className="container">
+                <div className="not_found_container">
+                    <FaExclamationCircle/>
+                    <div>
+                        {NOTFOUNDTEXTS.message[this.state.locale]}
+                    </div>
                 </div>
             </div>
-        </div>
-    );
+        );
+    
+    }
 };
 
 export default PageNotFound;

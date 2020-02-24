@@ -109,7 +109,7 @@ class Header extends Component {
                         <Nav.Link href="/news">{MENU.news[this.state.locale]}</Nav.Link>
                         <NavDropdown title={MENU.more[this.state.locale]} id="collasible-nav-dropdown" >
                             <NavDropdown.Item href="#action/3.2">{MENU.whoAreWe[this.state.locale]}</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">{MENU.contactUs[this.state.locale]}</NavDropdown.Item>
+                            <NavDropdown.Item href="/contact">{MENU.contactUs[this.state.locale]}</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action/3.4">{MENU.disclaimer[this.state.locale]}</NavDropdown.Item>
                         </NavDropdown>
