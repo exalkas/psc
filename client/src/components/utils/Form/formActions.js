@@ -5,8 +5,8 @@
 
 export const validate = (element, formdata= []) => {
 
-    console.log("formActions: VALIDATE: element=", element);
-    console.log("formActions: VALIDATE: formdata=", formdata);
+    // console.log("formActions: VALIDATE: element=", element);
+    // console.log("formActions: VALIDATE: formdata=", formdata);
 
     let error = [true,'']; //error array will contain the validation result and the message
 
@@ -100,38 +100,38 @@ export const update = (element, formdata, formName ) => {
         ...newFormdata[element.id]
     }
 
-    console.log("FORMACTIONS: UPDATE: ELEMENT=", element);
-    console.log("formactions: update: newelement=", newElement);
+    // console.log("FORMACTIONS: UPDATE: ELEMENT=", element);
+    // console.log("formactions: update: newelement=", newElement);
     if (element.id === 'country') {
-        console.log("FORM ACTIONS: element's value=", element.event.value, " NAME=", element.event.name, " checked", element.event.checked, " target=", element.event.target);
+        // console.log("FORM ACTIONS: element's value=", element.event.value, " NAME=", element.event.name, " checked", element.event.checked, " target=", element.event.target);
     } else {
-        console.log("FORM ACTIONS: element's value=", element.event.target.value, " NAME=", element.event.target.name, " checked", element.event.target.checked, " target=", element.event.target);
+        // console.log("FORM ACTIONS: element's value=", element.event.target.value, " NAME=", element.event.target.name, " checked", element.event.target.checked, " target=", element.event.target);
     }
     
     if (element.id==="languages" || element.id === "lookingFor") {
         newElement.value[element.event.target.id].value = element.event.target.checked  //element.event.target.value === true ? false : true
-        console.log("FORM ACTIONS: AFTER THE update: newelement=", newElement);
+        // console.log("FORM ACTIONS: AFTER THE update: newelement=", newElement);
     } else if (element.id === 'private') {
         newElement.checked = element.event.target.checked  //element.event.target.value === true ? false : true
         newElement.value = newElement.checked;
-        console.log("FORM ACTIONS: AFTER THE update: newelement=", newElement);
+        // console.log("FORM ACTIONS: AFTER THE update: newelement=", newElement);
     } else if (element.id === "gender") {
         newElement.value = element.event.target.name; //store the value
-        console.log("FORM ACTIONS: AFTER THE update: newelement=", newElement);
+        // console.log("FORM ACTIONS: AFTER THE update: newelement=", newElement);
     } else if (element.id === 'country'){
         newElement.value = element.event.value; //store the value
-        console.log("FORM ACTIONS: AFTER THE update: newelement=", newElement);
+        // console.log("FORM ACTIONS: AFTER THE update: newelement=", newElement);
     } else {
             newElement.value = element.event.target.value; //store the value
         }
     
     if(element.blur){ //do the validation only when the input looses control
         let validData = validate(newElement, formdata); //call another helper function and pass element and state
-        console.log("FORM ACTIONS VALIDATE SHOULD HAVE FINISHED!!");
+        // console.log("FORM ACTIONS VALIDATE SHOULD HAVE FINISHED!!");
         newElement.valid = validData[0]; //store true/false
         newElement.validationMessage = validData[1]; //store the validation message
 
-        console.log('FORM ACTIONS: ON BLUR: validData=', validData);
+        // console.log('FORM ACTIONS: ON BLUR: validData=', validData);
 
         if (!newElement.valid) { // If it's not validated, show appropriate symbols
             newElement.showX = true;

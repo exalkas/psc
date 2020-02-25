@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 
 import FormField from '../Form/formField';
-import { update, generateData, isFormValid } from '../Form/formActions';
+import { update, generateData, isFormValid, resetFields } from '../Form/formActions';
 
 import { CONTACTTEXTS } from '../../../Resources/Constants/Texts/contact_texts';
 import { showToastSuccess, showToastError} from '../../utils/helpers';
@@ -156,8 +156,12 @@ class ContactForm extends Component {
             .then( response => {
                 console.log('response=', response)
 
-                if (response.data.response) {
+                if (response.data.success) {
                     showToastSuccess(CONTACTTEXTS.success[this.state.locale])
+                    let oldFormdata = this.state.formdata;
+                    // need to reset state and formdata
+                    const formdata = resetFields(oldFormdata);
+                    this.setState({formdata});
                 } else {
                     showToastError(CONTACTTEXTS.failure[this.state.locale])
                     // clean form

@@ -81,6 +81,9 @@ body {
   display: block;
   clear: both; }
 
+.Toastify {
+  font-size: 1.5rem; }
+
 .footer_container {
   display: flex;
   justify-content: center;
@@ -153,6 +156,7 @@ header {
   height: 8rem;
   color: #ffffff;
   display: block;
+  position: absolute;
   top: 0;
   z-index: 999;
   display: flex;
@@ -523,7 +527,7 @@ header {
             FORM
 ==============================*/
 .contact_container {
-  padding-top: 5rem;
+  padding-top: 15rem;
   width: 60%;
   margin: 0 auto; }
   .contact_container .register_form {

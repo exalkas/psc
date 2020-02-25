@@ -6,6 +6,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 
@@ -120,6 +123,7 @@ class Header extends Component {
                     <div className="lang_icon"><FaGlobe/></div>
                     <Dropdown options={this.state.options} onChange={this.handleOnSelect} value={this.state.ddValue} placeholder="Select an option" />
                 </div>
+                <ToastContainer autoClose={3000} />
             </div>
         );
     }
