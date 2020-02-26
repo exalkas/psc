@@ -39,8 +39,8 @@ class Header extends Component {
         window.addEventListener('resize', this.handleWindowResize);
         // console.log('HANDLE ON SELECT: MENU=', MENU)
         this.setState({
-            menu: MENU
-            // windowWidth: window.size
+            menu: MENU,
+            windowWidth: window.size
         });
 
         this.handleLocale('first loading');
