@@ -1,5 +1,6 @@
 .footer_container {
     display: flex;
+    width: 100%;
     justify-content: center;
     align-content: center;
     margin-top: 2rem;
@@ -22,9 +23,11 @@
     line-height: 4rem;
     color: $font-color4;
     border-radius: 5rem;
-    font-size: 1.2rem;
+    font-size: 1.2vw;//1.2rem;
 
-   
+    @media only screen and (max-width: $bp-large) {
+        font-size: 2vw;//1.2rem;
+    }
 
     &:hover {
         cursor: pointer;
@@ -48,7 +51,7 @@
     .bottom_button {
         width: 4rem;
         height: 4rem;
-        font-size: 2rem;
+        font-size: 1.2vw;//1.2rem;
         background-color: $font-color3;
         text-align: center;
         color: $font-color4;
@@ -58,6 +61,10 @@
         align-content: center;
         justify-content: center;
         // margin-left: 25rem;
+
+        @media only screen and (max-width: $bp-large) {
+            font-size: 2vw;//1.2rem;
+        }
 
         &:hover {
             cursor: pointer;

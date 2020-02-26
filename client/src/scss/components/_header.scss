@@ -2,25 +2,24 @@
             HEADER
 ==============================*/
 
-header { 
-    background: transparent !important;
-    // background: rgba(0,0,0,0) !important;
-    // position: fixed;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-    height: 8rem;
-    color: $font-color1;
-}
+// header { 
+//     background: transparent !important;
+//     // background: rgba(0,0,0,0) !important;
+//     // position: fixed;
+//     top: 0;
+//     z-index: 999;
+//     width: 100%;
+//     height: 8rem;
+//     color: $font-color1;
+// }
 
 .header_container {
     // background: white!important;
     background: rgba(0,0,0,0) !important;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
-    height: 8rem;
+    height: 11rem;
     color: $font-color1;
-    display: block;
     position: absolute;
     top: 0;
     z-index: 999;
@@ -28,91 +27,131 @@ header {
     justify-content: center;
     align-items: center;
 
-
     @media only screen and (max-width: $bp-medium) {
         display: flex;
         flex-direction: column;
-        height: 20rem;
+        padding-top: 5rem;
+        // height: 20rem;
     }
 
-    nav {
-        // background: rgb(143, 35, 35) !important;
-        // width: 100rem;
-        margin: 0 auto;
-
-        .navbar {
-            display: flex !important;
-            justify-content: center;
-
-            @media only screen and (max-width: $bp-medium) {
-                width: 100%;
-                margin: 0;
-                // display: flex;
-                // flex-direction: column;
-                height: 10rem;
-            }
-        }
-        
-        a{
-            margin: 0 1rem; 
-            color: $font-color1 !important;
-            font-size: 1.4rem;
-    
-            &:hover {
-                color: $font-color2 !important;
-            }
-        }
-
-
-    
-        .nav-link:hover {
-            color: $font-color2;
-        }
-    }
-    
-    .language_selector_container {
-        background-color: transparent;
-        // border: 1px solid;
-        width: 8rem;
+    .logo {
         height: 100%;
-        // height: 6rem;
-        align-self: center;
-        font-size: 2rem;
         display: flex;
-        justify-content: flex-start;
         align-items: center;
-        // padding-bottom: 1rem;
-        // border-radius: $border-radius-standard;
 
-        svg {
-            font-size: 2.5rem;
-            margin-right: 1rem;
-        }
-
-        .Dropdown-root {
-            font-size: 1rem;
-
-            .Dropdown-control{
-                border:1px solid white;
-                border-radius: $border-radius-standard;
-                background: transparent;
-                color: white;
-            }
-
-            .Dropdown-menu {
-                background: transparent;
-            }
-
-            .Dropdown-option {
-                color: white;
-                background: transparent;
-            }
-
-            .Dropdown-option.is-selected {
-                color: $font-color2;
-            } 
+        @media only screen and (max-width: $bp-medium) {
+            margin-bottom: 2rem;
         }
     }
+
+    .menu_wrapper {
+        display: flex;
+        align-items: center;
+
+        .menu_container {
+            margin-right: 2rem;
+            display: flex;
+            align-items: center;
+            a{
+                margin: 0 1rem; 
+                color: $font-color1 !important;
+                font-size: 1.4rem;
+        
+                &:hover {
+                    color: $font-color2 !important;
+                    text-decoration: none;
+                }
+            }
+            .ddHeader {
+                font-size: 1.4rem;
+                margin-left: 1rem;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $font-color2;
+                }
+            }
+        }
+    
+        .menu_container_burger {
+            cursor: pointer;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            max-width: 100%;
+    
+            button {
+                background: none;
+                border: none;
+                margin: 0;
+                padding: 0;
+                outline: none !important;
+
+                svg {
+                    font-size: 3.5rem;
+                    color: $font-color1;
+        
+                    &:hover {
+                        color: $font-color2 !important;
+                        text-decoration: none;
+                    }
+                }
+            }
+    
+        }
+    
+        .language_selector_container {
+            background-color: transparent;
+            // border: 1px solid;
+            width: 12rem;
+            height: 100%;
+            // height: 6rem;
+            align-self: center;
+            font-size: 2rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            // padding-bottom: 1rem;
+            // border-radius: $border-radius-standard;
+    
+            .lang_icon {
+                display: flex;
+                align-content: center;
+            }
+    
+            svg {
+                font-size: 2.5rem;
+                margin-right: 1rem;
+            }
+    
+            .Dropdown-root {
+                font-size: 1rem;
+                // max-width: 6rem !important;
+    
+                .Dropdown-control{
+                    border:1px solid white;
+                    border-radius: $border-radius-standard;
+                    background: transparent;
+                    color: white;
+                    
+                }
+    
+                .Dropdown-menu {
+                    background: transparent;
+                }
+    
+                .Dropdown-option {
+                    color: white;
+                    background: transparent;
+                }
+    
+                .Dropdown-option.is-selected {
+                    color: $font-color2;
+                } 
+            }
+        }
+    }
+
 }
 
 .dropdown-menu {
@@ -129,3 +168,95 @@ header {
         color: black !important;
     }
 }
+
+
+
+    // nav {
+    //     // background: rgb(143, 35, 35) !important;
+    //     // width: 100rem;
+    //     margin: 0 auto;
+
+    //     .navbar {
+    //         display: flex !important;
+    //         justify-content: center;
+
+    //         @media only screen and (max-width: $bp-medium) {
+    //             width: 100%;
+    //             margin: 0;
+    //             // display: flex;
+    //             // flex-direction: column;
+    //             height: 10rem;
+    //         }
+    //     }
+        
+    //     a{
+    //         margin: 0 1rem; 
+    //         color: $font-color1 !important;
+    //         font-size: 1.4rem;
+    
+    //         &:hover {
+    //             color: $font-color2 !important;
+    //         }
+    //     }
+
+
+    
+    //     .nav-link:hover {
+    //         color: $font-color2;
+    //     }
+    // }
+
+    .MuiPaper-root {
+        background-color: $font-color4 !important;
+        opacity: 0.8 !important;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 25rem !important;
+        z-index: 2;
+        border: $font-color1;
+        box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+        border-radius: $border-radius-standard;
+        min-height: 37rem !important;
+        overflow: hidden;
+        
+
+        .ddBurgerMenuContainer {
+            min-height: 20rem !important;
+            ul{
+                padding-top: 2rem;
+                li {
+                    margin-bottom: 1rem;
+                    a {
+                        color: $font-color1 !important;
+                        font-size: 1.4rem;
+                        padding: 2rem 2rem;
+
+                        &:hover {
+                            text-decoration: none !important;
+                            color: $font-color2 !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .ddMenuContainer {
+            ul{
+                padding-top: 2rem;
+                li {
+                    margin-bottom: 1rem;
+                    a {
+                        color: $font-color1 !important;
+                        font-size: 1.4rem;
+                        padding: 2rem 2rem;
+
+                        &:hover {
+                            text-decoration: none !important;
+                            color: $font-color2 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
