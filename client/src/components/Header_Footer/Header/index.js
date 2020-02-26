@@ -40,7 +40,7 @@ class Header extends Component {
         // console.log('HANDLE ON SELECT: MENU=', MENU)
         this.setState({
             menu: MENU,
-            windowWidth: window.size
+            windowWidth: window.innerWidth
         });
 
         this.handleLocale('first loading');
