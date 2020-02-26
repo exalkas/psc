@@ -6,18 +6,24 @@
     margin-top: 2rem;
     margin-bottom: 5rem;
     background-color: transparent;
+
+    @media only screen and (max-width: $bp-medium) {
+        // padding-left: 3vw;
+        // padding-right: 3vw;
+    }
 }
 
-.footer_right{
-    min-width: 10rem !important;
+.footer_left{
+    width: 25%;
     height: 4rem;
     line-height: 4rem;
+    padding-left: 1rem;
 }
 
 .footer_center {
     background-color: $font-color3;
     height: 4rem;
-    width: 40rem;
+    width: 50%;
     // margin: 2rem auto 5rem auto;
     text-align: center;
     line-height: 4rem;
@@ -38,11 +44,12 @@
     }
 }
 .footer_right{
-    min-width: 25%;
+    width: 25%;
     height: 4rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 1rem;
 
     a:hover {
         text-decoration: none !important;

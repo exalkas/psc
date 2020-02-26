@@ -8,12 +8,20 @@
     // border: solid rgba(227, 227, 227, 1) 0px;
     width: 60%;
     margin: 0 auto;
+
+    @media only screen and (max-width: $bp-medium) {
+        width: 90%;
+    }
     
     .register_form {
         padding: 5rem 10rem;
         background-color: rgba(43, 43, 43, 0.46);
         border: solid rgba(227, 227, 227, 1) 0px;
         min-height: 70vh;
+
+        @media only screen and (max-width: $bp-medium) {
+            padding: 2rem;
+        }
 
     h2 {
         color: $font-color2;
@@ -31,6 +39,14 @@
         // height: 11rem;
         margin-bottom: 2rem;
 
+        @media only screen and (max-width: $bp-medium) {
+            width: 50vw;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+        }
+        
         .input_top_row {
             width: 100%;
             // height: 100%;
@@ -197,6 +213,15 @@
         padding-left: 0;
         border-radius: $border-radius-standard;
         padding-left: 1rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 50vw;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+        }
+
 
         &::placeholder {
             color: $font-color4;
