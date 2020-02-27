@@ -112,11 +112,12 @@ class ContactForm extends Component {
         }
     }
 
-    componentDidMount() {
+    async componentDidMount() {
         
         document.addEventListener('langChanged', this.handleLocale);
 
-        this.setState({locale: localStorage.getItem('lang_pref')})
+        await this.setState({locale: localStorage.getItem('lang_pref')});
+        await this.updatePlaceholders();
     }
 
     componentWillUnmount() {
@@ -137,8 +138,9 @@ class ContactForm extends Component {
     }
 
 
-    handleLocale = () => {
-        this.setState({locale: localStorage.getItem('lang_pref')})
+    handleLocale = async () => {
+        await this.setState({locale: localStorage.getItem('lang_pref')})
+        await this.updatePlaceholders();
     }
 
     submitForm= async event =>{
@@ -172,6 +174,18 @@ class ContactForm extends Component {
             this.setState({formError: true})
         }
             
+    }
+
+    updatePlaceholders = () => {
+        let formdata = this.state.formdata;
+
+        formdata.name.config.placeholder = CONTACTTEXTS.name[this.state.locale];
+        formdata.email.config.placeholder = CONTACTTEXTS.email[this.state.locale];
+        formdata.subject.config.placeholder = CONTACTTEXTS.subject[this.state.locale];
+        formdata.message.config.placeholder = CONTACTTEXTS.message[this.state.locale];
+        console.log('HANDLE UPDATE PLACEHOLDERS: formadata=', formdata)
+
+        this.setState({formdata});
     }
 
     render() {
@@ -222,6 +236,8 @@ class ContactForm extends Component {
                             {CONTACTTEXTS.buttonText[this.state.locale]}
                         </button>
                     </div>
+                    <h2>{CONTACTTEXTS.bottomTitle[this.state.locale]}</h2>
+                    <p>{CONTACTTEXTS.disclaimerText[this.state.locale]}</p>
                 </form>
             </div>
         )        

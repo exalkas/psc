@@ -51,6 +51,11 @@ class Header extends Component {
         window.removeEventListener('resize', this.handleWindowResize);
       }
 
+      // Close DD when burger menu is open
+    handleBurgerDDLinkClick = () => {
+        this.setState({ddBurgerOpen:false})
+    }
+
     handleBurgerMenuOpen = e => {
         this.setState({
             ddBurgerOpen: true,
@@ -75,6 +80,11 @@ class Header extends Component {
             ddMenuOpen: true,
             anchorElementDD: e.currentTarget
         });
+    }
+
+    // Closes DD menu when item clicked
+    handleDDLinkClick = () => {
+        this.setState({ddMenuOpen:false})
     }
 
     handleLocale = e => {
@@ -151,11 +161,11 @@ class Header extends Component {
                        <div className='menu_container'>
                            {console.log('HANDLE WINDOW RESIZE: wiindow > 600')}
                            <Link to='/'>{MENU.home[this.state.locale]}</Link>
-                           <Link to='/'>{MENU.thePSC[this.state.locale]}</Link>
-                           <Link to='/'>{MENU.joinPSC[this.state.locale]}</Link>
-                           <Link to='/'>{MENU.purchaseGuide[this.state.locale]}</Link>
-                           <Link to='/'>{MENU.buy[this.state.locale]}</Link>
-                           <Link to='/'>{MENU.theFootbalMarket[this.state.locale]}</Link>
+                           <Link to='/thepsc'>{MENU.thePSC[this.state.locale]}</Link>
+                           <Link to='/joinpsc'>{MENU.joinPSC[this.state.locale]}</Link>
+                           <Link to='/purchaseguide'>{MENU.purchaseGuide[this.state.locale]}</Link>
+                           <Link to='/buy'>{MENU.buy[this.state.locale]}</Link>
+                           <Link to='/thefootballmarket'>{MENU.theFootbalMarket[this.state.locale]}</Link>
                            <Link to='/news'>{MENU.news[this.state.locale]}</Link>
                            
                            <div className='ddHeader' onClick={e => this.handleDDMenuOpen(e)}>
@@ -180,10 +190,10 @@ class Header extends Component {
                                >
                                    <div className="ddMenuContainer" >
                                        <ul>
-                                           <li className ='menu_li_item'><Link to='/'>{MENU.whoAreWe[this.state.locale]}</Link></li>
-                                           <li className ='menu_li_item'><Link to='/contact'>{MENU.contactUs[this.state.locale]}</Link></li>
+                                           <li className ='menu_li_item' onClick={this.handleDDLinkClick}><Link to='/whoarewe'>{MENU.whoAreWe[this.state.locale]}</Link></li>
+                                           <li className ='menu_li_item' onClick={this.handleDDLinkClick}><Link to='/contact'>{MENU.contactUs[this.state.locale]}</Link></li>
                                            <hr />
-                                           <li className ='menu_li_item'><Link to='/contact'>{MENU.disclaimer[this.state.locale]}</Link></li>
+                                           <li className ='menu_li_item' onClick={this.handleDDLinkClick}><Link to='/disclaimer'>{MENU.disclaimer[this.state.locale]}</Link></li>
                                        </ul>
                                    </div>
                                </Popover>
@@ -213,18 +223,18 @@ class Header extends Component {
                                <div className="ddBurgerMenuContainer" >
                                    <ul>
            
-                                       <li className ='menu_li_item'><Link to='/'>{MENU.home[this.state.locale]}</Link></li>
-                                       <li className ='menu_li_item'><Link to='/'>{MENU.thePSC[this.state.locale]}</Link></li>
-                                       <li className ='menu_li_item'><Link to='/'>{MENU.joinPSC[this.state.locale]}</Link></li>
-                                       <li className ='menu_li_item'><Link to='/'>{MENU.purchaseGuide[this.state.locale]}</Link></li>
-                                       <li className ='menu_li_item'><Link to='/'>{MENU.buy[this.state.locale]}</Link></li>
-                                       <li className ='menu_li_item'><Link to='/'>{MENU.theFootbalMarket[this.state.locale]}</Link></li>
-                                       <li className ='menu_li_item'><Link to='/news'>{MENU.news[this.state.locale]}</Link></li>
+                                       <li className ='menu_li_item' onClick={this.handleBurgerDDLinkClick}><Link to='/'>{MENU.home[this.state.locale]}</Link></li>
+                                       <li className ='menu_li_item' onClick={this.handleBurgerDDLinkClick}><Link to='/thepsc'>{MENU.thePSC[this.state.locale]}</Link></li>
+                                       <li className ='menu_li_item' onClick={this.handleBurgerDDLinkClick}><Link to='/joinpsc'>{MENU.joinPSC[this.state.locale]}</Link></li>
+                                       <li className ='menu_li_item' onClick={this.handleBurgerDDLinkClick}><Link to='/purchaseguide'>{MENU.purchaseGuide[this.state.locale]}</Link></li>
+                                       <li className ='menu_li_item' onClick={this.handleBurgerDDLinkClick}><Link to='/buy'>{MENU.buy[this.state.locale]}</Link></li>
+                                       <li className ='menu_li_item' onClick={this.handleBurgerDDLinkClick}><Link to='/thefootballmarket'>{MENU.theFootbalMarket[this.state.locale]}</Link></li>
+                                       <li className ='menu_li_item' onClick={this.handleBurgerDDLinkClick}><Link to='/news'>{MENU.news[this.state.locale]}</Link></li>
            
                                        <hr />
-                                       <li className ='menu_li_item'><Link to='/'>{MENU.whoAreWe[this.state.locale]}</Link></li>
-                                       <li className ='menu_li_item'><Link to='/contact'>{MENU.contactUs[this.state.locale]}</Link></li>
-                                       <li className ='menu_li_item'><Link to='/contact'>{MENU.disclaimer[this.state.locale]}</Link></li>
+                                       <li className ='menu_li_item' onClick={this.handleBurgerDDLinkClick}><Link to='/whoarewe'>{MENU.whoAreWe[this.state.locale]}</Link></li>
+                                       <li className ='menu_li_item' onClick={this.handleBurgerDDLinkClick}><Link to='/contact'>{MENU.contactUs[this.state.locale]}</Link></li>
+                                       <li className ='menu_li_item' onClick={this.handleBurgerDDLinkClick}><Link to='/disclaimer'>{MENU.disclaimer[this.state.locale]}</Link></li>
                                    </ul>
                                </div>
                            </Popover>

@@ -29,6 +29,10 @@
         font-size: 3rem;
         // padding-left: 3rem;
         margin-bottom: 5rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            padding: 0 2rem;
+        }
     }
 
     // input text
@@ -181,9 +185,10 @@
     }
 
     .button_container {
-        width: 40rem;
+        width: 100%;
         display: flex;
         justify-content: center;
+        margin-bottom: 4rem;
 
         button {
             background: transparent;
@@ -232,6 +237,20 @@
         }
     }
 
+        p {
+            font-size: 1.3vw;   
+            font-weight: 300;
+
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 1.5vw; 
+                padding: 0 2rem;
+            }
+
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 3vw; 
+                padding: 0 2rem;
+            }
+        }
     }
 }
 

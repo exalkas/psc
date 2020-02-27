@@ -140,10 +140,16 @@ const Formfield = ({formdata, change, id, handleEyeClick, onKeyPress}) => {
                         <div className="label_inputs">{formdata.config.label}</div>
                     :null}
                     <textarea
-                        {...formdata.config}
+                        // {...formdata.config}
                         value={formdata.value}
                         onBlur={(event) => change({event,id,blur:true})}
                         onChange={(event) => change({event,id}) }
+
+                        onKeyPress = {onKeyPress ? event => onKeyPress(event) : null}
+                        placeholder = {formdata.config.placeholder}
+                        disabled = {false}
+                        name = {formdata.config.name}
+
                     />
                     {showError()}
                 </div>

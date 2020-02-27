@@ -91,7 +91,8 @@ body {
 .footer_center {
   background-color: #e7eb05;
   height: 4rem;
-  width: 50%;
+  width: 40rem;
+  max-width: 30vw;
   text-align: center;
   line-height: 4rem;
   color: #2b2b2b;
@@ -732,6 +733,9 @@ body {
       font-weight: 700;
       font-size: 3rem;
       margin-bottom: 5rem; }
+      @media only screen and (max-width: 56.25em) {
+        .contact_container .register_form h2 {
+          padding: 0 2rem; } }
     .contact_container .register_form .input_wrapper {
       width: 40rem;
       display: flex;
@@ -829,9 +833,10 @@ body {
           margin-top: 0.5rem;
           padding: 0 0.5rem; }
     .contact_container .register_form .button_container {
-      width: 40rem;
+      width: 100%;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      margin-bottom: 4rem; }
       .contact_container .register_form .button_container button {
         background: transparent;
         border: none;
@@ -863,6 +868,17 @@ body {
         color: #2b2b2b; }
       .contact_container .register_form textarea:focus {
         outline: none !important; }
+    .contact_container .register_form p {
+      font-size: 1.3vw;
+      font-weight: 300; }
+      @media only screen and (max-width: 56.25em) {
+        .contact_container .register_form p {
+          font-size: 1.5vw;
+          padding: 0 2rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .contact_container .register_form p {
+          font-size: 3vw;
+          padding: 0 2rem; } }
 
 input {
   font-size: 1.5rem;

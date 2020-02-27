@@ -16,6 +16,10 @@ class NewsComponent extends Component {
         this.setState({locale: localStorage.getItem('lang_pref')})
     }
 
+    componentWillUnmount() {
+        document.removeEventListener('langChanged', this.loadTexts);
+    }
+    
     handleLocale = () => {
         this.setState({locale: localStorage.getItem('lang_pref')})
     }
