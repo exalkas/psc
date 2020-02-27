@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
 
+import { EmptyRightStripe, GraphicalImageLeft, GraphicalImageRight } from '../utils/graphics'
+
+import { THEPSCTEXTS } from '../../Resources/Constants/Texts/thepsc';
+
+import Mbappe from '../../Resources/KylianMbappeFrancia.webp';
+
+
 class ThePsc extends Component {
+
+    state = {
+        locale: 'en'
+    }
 
     componentDidMount() {
         
@@ -19,8 +30,8 @@ class ThePsc extends Component {
         
     render() {
         return (
-            <div>
-                
+            <div className='home_container'>
+
             </div>
         );
     }

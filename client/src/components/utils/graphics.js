@@ -40,7 +40,7 @@ export const GraphicalOne = ({h2One = null, bottomOne = null, topTwo = null, h2T
     );
 };
 
-export const GraphicalImageRight = ({topOne = null, topTwo = null, topThree = null, botOne = null, botTwo = null, image = '', className = null}) => {
+export const GraphicalImageRight = ({topOne = null, topTwo = null, topThree = null, topFour = null, topFive = null, botOne = null, botTwo = null, image = '', className = null}) => {
     return (
         <div className =  {className || 'graphical_image_right' }>
             <div className='graphical_texts'>
@@ -65,6 +65,14 @@ export const GraphicalImageRight = ({topOne = null, topTwo = null, topThree = nu
                     <Fade left big cascade>
                         <div className='topThree'>{topThree}</div>
                     </Fade>
+                    <Slide right >
+                    <div className='topFour'>
+                        {topFour && topFour.length > 0 ? 
+                            topFour.map( (item, i) => <p key={i}>{item}</p>)
+                        :null
+                        }
+                    </div>
+                    </Slide>
                 </div>
                 <div className='graphical_bottom'>
                     <Slide right >
@@ -86,7 +94,7 @@ export const GraphicalImageRight = ({topOne = null, topTwo = null, topThree = nu
     );
 };
 
-export const GraphicalImageLeft = ({topOne = null, topTwo = null, topThree = null, botOne = null, botTwo = null, image = '', className = null }) => {
+export const GraphicalImageLeft = ({topOne = null, topTwo = null, topThree = null , topFour = null, topFive = null, botOne = null, botTwo = null, image = '', className = null }) => {
     return (
         <div className = {className || 'graphical_image_left' }>
             <div className='graphical_texts'>
@@ -111,6 +119,13 @@ export const GraphicalImageLeft = ({topOne = null, topTwo = null, topThree = nul
                     <Fade left big cascade>
                         <div className='topThree'>{topThree}</div>
                     </Fade>
+                    <div className='topFour'>
+                        {topFour && topFour.length > 0 ? 
+                            topFour.map( (item, i) => <p key={i}>{item}</p>)
+                        :null
+                        }
+                    </div>
+                    <div className='topFive'>{topFive}</div>
                 </div>
                 <div className='graphical_bottom'>
                     <Slide right >
@@ -131,3 +146,7 @@ export const GraphicalImageLeft = ({topOne = null, topTwo = null, topThree = nul
         </div>
     );
 };
+
+export const EmptyRightStripe = () => (
+    <div className='empty_stripe_right'></div>
+)

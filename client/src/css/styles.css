@@ -38,7 +38,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/images/background.webp");
+  background-image: url("http://alkis.torch.technology/images/background.webp");
   padding-bottom: 5rem;
   width: 100%; }
 
@@ -397,6 +397,14 @@ body {
         .graphical_image_right .graphical_texts .graphical_top .topThree {
           font-size: 1.8vw;
           line-height: 2vw; } }
+    .graphical_image_right .graphical_texts .graphical_top .topFour {
+      font-size: 1vw;
+      font-weight: 300;
+      line-height: 1vw; }
+    .graphical_image_right .graphical_texts .graphical_top .topFive {
+      margin-bottom: 4rem;
+      font-size: 1.5rem;
+      font-weight: 300; }
   .graphical_image_right .graphical_texts .graphical_bottom {
     clip-path: polygon(0 0, 45vw 0, 60vw 100%, 15vw 100%);
     background-color: rgba(206, 209, 13, 0.42);
@@ -451,7 +459,8 @@ body {
     min-height: 30vh;
     width: 100%;
     background-color: rgba(43, 43, 43, 0.52);
-    padding-left: 35vw; }
+    text-align: right;
+    padding-right: 13vw; }
     @media only screen and (max-width: 56.25em) {
       .graphical_image_left .graphical_texts .graphical_top {
         padding-left: 20vw; } }
@@ -480,6 +489,14 @@ body {
           line-height: 1.5vw;
           margin-bottom: 2vw; } }
     .graphical_image_left .graphical_texts .graphical_top .topThree {
+      margin-bottom: 4rem;
+      font-size: 1.5rem;
+      font-weight: 300; }
+    .graphical_image_left .graphical_texts .graphical_top .topFour {
+      font-size: 1vw;
+      font-weight: 300;
+      line-height: 1vw; }
+    .graphical_image_left .graphical_texts .graphical_top .topFive {
       margin-bottom: 4rem;
       font-size: 1.5rem;
       font-weight: 300; }
@@ -693,6 +710,13 @@ body {
     .messi .graphical_image img {
       max-width: 100%;
       height: auto; }
+
+.empty_stripe_right {
+  width: 70%;
+  margin: 0 auto;
+  min-height: 30vh;
+  clip-path: polygon(0 0, 45vw 0, 60vw 100%, 15vw 100%);
+  background-color: rgba(206, 209, 13, 0.42); }
 
 .news_container {
   padding-top: 10rem; }
