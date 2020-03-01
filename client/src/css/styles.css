@@ -40,6 +40,9 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      background-attachment: initial; } }
 
 .layout {
   padding-bottom: 5rem; }
