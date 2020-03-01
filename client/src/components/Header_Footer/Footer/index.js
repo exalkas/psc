@@ -36,7 +36,7 @@ class Footer extends Component {
                     </div>
                  </Fade>
                  <div className='footer_right'>
-                    <HashLink smooth to='#headerElement'><h3 className='bottom_button'>^</h3></HashLink>
+                    <HashLink smooth to='#headerElement'><button className='bottom_button'>^</button></HashLink>
                  </div>
             </footer>
         );

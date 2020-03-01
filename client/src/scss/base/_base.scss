@@ -25,6 +25,9 @@ html {
 }
 
 body {
+    
+    width: 100%;
+
     margin:0;
     padding:0 !important;
     font-family: $default-font;
@@ -32,38 +35,42 @@ body {
 
     box-sizing: border-box;
 
-    min-height: 100%;
-    width: 100%;
-    background-image: url('/images/background.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    // background-size: cover;
+    // background-attachment: fixed;
+    // background-position: center;
+    // background-repeat: no-repeat;
 
-    @media only screen and (max-width: $bp-medium) {
-        background-attachment: initial;
-    }
+    // @media only screen and (max-width: $bp-medium) {
+    //     background-attachment: initial;
+    // }
 
 }
 
 .layout {
+
     padding-bottom: 5rem;
 }
 
-.page_container {
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
     
-    min-height: 100vh;
+    height: 100%;
     width: 100%;
+
+    background-image: url('/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-// .page_wrapper {
-//     padding-top: 8.5rem;
-// }
+.page_container {
+    position: relative;
+}
 
-// a {
-//     text-decoration: none;
-//     color:inherit;
-// }
+.home_container {
+}
 
 .bck_b_dark {
     background: #272723;
@@ -73,8 +80,6 @@ body {
     padding: 5.1rem;
     font-size: 3rem;
 }
-
-
 
 .no_result {
     font-size: 4rem;

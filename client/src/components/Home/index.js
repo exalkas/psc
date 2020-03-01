@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { GraphicalOne, GraphicalImageRight, GraphicalImageLeft } from '../utils/graphics';
 
-import Ronaldo from '../../Resources/ronaldo.webp';
-import Neymar from '../../Resources/neymar.webp';
-import Bale from '../../Resources/GarethBale.webp';
-import Messi from '../../Resources/LionelMessi.webp';
+import Ronaldo from '../../Resources/ronaldo.png';
+import Neymar from '../../Resources/neymar.png';
+import Bale from '../../Resources/GarethBale.png';
+import Messi from '../../Resources/LionelMessi.png';
 
 import { HOMEPAGETEXTS } from '../../Resources/Constants/Texts/home';
 

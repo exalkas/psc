@@ -15,7 +15,7 @@ import 'react-dropdown/style.css';
 import { FaGlobe } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
-import logo from '../../../Resources/logo.webp';
+import logo from '../../../Resources/logo.png';
 
 import { MENU } from '../../../Resources/Constants/Texts/menu';
 

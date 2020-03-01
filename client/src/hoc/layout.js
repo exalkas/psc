@@ -12,6 +12,7 @@ class MainLayout extends Component {
         return (
             <div className="layout">
                 <Header/>
+                <div className='bg'></div>
                 <div className="page_container">
                     {this.props.children}
                 </div>

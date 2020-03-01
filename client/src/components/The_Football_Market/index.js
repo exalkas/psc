@@ -4,13 +4,13 @@ import { EmptyRightStripe, GraphicalImageLeft, GraphicalImageRight } from '../ut
 
 import { THEMARKETTEXTS } from '../../Resources/Constants/Texts/thefootballmarket_texts';
 
-import Mbappe from '../../Resources/KylianMbappeFrancia.webp';
-import Ronaldo from '../../Resources/RonaldoLeft.webp';
-import Ibra from '../../Resources/Zlatan_Ibrahimovic.webp';
-import Neymar from '../../Resources/NeymarLeft.webp';
-import Martial from '../../Resources/Martial.webp';
-import Nagatomo from '../../Resources/Nagatomo.webp';
-import NeymarImage from '../../Resources/neymar_graph_image.webp';
+import Mbappe from '../../Resources/KylianMbappeFrancia.png';
+import Ronaldo from '../../Resources/RonaldoLeft.png';
+import Ibra from '../../Resources/Zlatan_Ibrahimovic.png';
+import Neymar from '../../Resources/NeymarLeft.png';
+import Martial from '../../Resources/Martial.png';
+import Nagatomo from '../../Resources/Nagatomo.png';
+import NeymarImage from '../../Resources/neymar_graph_image.png';
 
 class TheFootballMarket extends Component {
 
