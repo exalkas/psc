@@ -32,20 +32,17 @@ body {
   padding: 0 !important;
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
-  box-sizing: border-box; }
-
-.layout {
+  box-sizing: border-box;
   min-height: 100%;
   width: 100%;
   background-image: url("/images/background.webp");
-  background-size: auto;
+  background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; }
+
+.layout {
   padding-bottom: 5rem; }
-  @media only screen and (max-width: 56.25em) {
-    .layout {
-      background-attachment: initial; } }
 
 .page_container {
   min-height: 100vh;
