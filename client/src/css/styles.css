@@ -35,12 +35,16 @@ body {
   box-sizing: border-box; }
 
 .layout {
-  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  background-image: url("/images/background.webp");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("http://alkis.torch.technology/images/background.webp");
-  padding-bottom: 5rem;
-  width: 100%; }
+  padding-bottom: 5rem; }
 
 .page_container {
   min-height: 100vh;
@@ -401,6 +405,12 @@ body {
       font-size: 1vw;
       font-weight: 300;
       line-height: 1vw; }
+    .graphical_image_right .graphical_texts .graphical_top .topFourB {
+      margin-top: 3rem;
+      font-size: 1vw;
+      font-weight: 400;
+      line-height: 1.3vw;
+      color: #39d3db; }
     .graphical_image_right .graphical_texts .graphical_top .topFive {
       margin-bottom: 4rem;
       font-size: 1.5rem;
@@ -500,6 +510,14 @@ body {
       margin-bottom: 4rem;
       font-size: 1.5rem;
       font-weight: 300; }
+      @media only screen and (max-width: 56.25em) {
+        .graphical_image_left .graphical_texts .graphical_top .topFive {
+          font-size: 1rem; } }
+    .graphical_image_left .graphical_texts .graphical_top .top_image {
+      margin-top: 2rem; }
+      .graphical_image_left .graphical_texts .graphical_top .top_image img {
+        max-width: 100%;
+        height: auto; }
   .graphical_image_left .graphical_texts .graphical_bottom {
     clip-path: polygon(15vw 0, 60vw 0, 45vw 100%, 0 100%);
     background-color: rgba(206, 209, 13, 0.42);
@@ -717,6 +735,222 @@ body {
   min-height: 30vh;
   clip-path: polygon(0 0, 45vw 0, 60vw 100%, 15vw 100%);
   background-color: rgba(206, 209, 13, 0.42); }
+
+.ronaldo2 {
+  position: relative;
+  width: 70%;
+  margin: 0 auto; }
+  .ronaldo2 .graphical_texts .graphical_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    clip-path: polygon(15vw 0, 60vw 0, 60vw 100%, 15vw 100%);
+    min-height: 30vh;
+    width: 100%;
+    background-color: rgba(43, 43, 43, 0.52);
+    text-align: right;
+    padding-right: 13vw; }
+    @media only screen and (max-width: 56.25em) {
+      .ronaldo2 .graphical_texts .graphical_top {
+        padding-left: 20vw; } }
+    .ronaldo2 .graphical_texts .graphical_top .topOne {
+      margin-top: 2rem; }
+      .ronaldo2 .graphical_texts .graphical_top .topOne h2 {
+        color: #39d3db;
+        font-size: 3vw;
+        font-weight: 900;
+        letter-spacing: 3px;
+        line-height: 2.5vw; }
+        @media only screen and (max-width: 56.25em) {
+          .ronaldo2 .graphical_texts .graphical_top .topOne h2 {
+            font-size: 3vw;
+            line-height: 1.5vw;
+            margin-bottom: 2vw; } }
+    .ronaldo2 .graphical_texts .graphical_top .topTwo {
+      font-size: 2vw;
+      font-weight: 300;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      line-height: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .ronaldo2 .graphical_texts .graphical_top .topTwo {
+          font-size: 3vw;
+          line-height: 1.5vw;
+          margin-bottom: 2vw; } }
+    .ronaldo2 .graphical_texts .graphical_top .topThree {
+      margin-bottom: 4rem;
+      font-size: 1.5rem;
+      font-weight: 300; }
+    .ronaldo2 .graphical_texts .graphical_top .topFour {
+      font-size: 1.2vw;
+      font-weight: 300;
+      line-height: 1vw; }
+    .ronaldo2 .graphical_texts .graphical_top .topFive {
+      margin-bottom: 4rem;
+      font-size: 1.3rem;
+      font-weight: 300; }
+      @media only screen and (max-width: 56.25em) {
+        .ronaldo2 .graphical_texts .graphical_top .topFive {
+          font-size: 1.5vw; } }
+  .ronaldo2 .graphical_texts .graphical_bottom {
+    clip-path: polygon(15vw 0, 60vw 0, 45vw 100%, 0 100%);
+    background-color: rgba(206, 209, 13, 0.42);
+    padding-left: 35vw;
+    margin: 0;
+    min-height: 25vh; }
+    @media only screen and (max-width: 56.25em) {
+      .ronaldo2 .graphical_texts .graphical_bottom {
+        padding-left: 30vw; } }
+    .ronaldo2 .graphical_texts .graphical_bottom h1 {
+      color: #e7eb05;
+      font-size: 8.3rem;
+      font-weight: 400;
+      letter-spacing: 3px;
+      font-style: italic;
+      padding-top: 5rem; }
+      @media only screen and (max-width: 56.25em) {
+        .ronaldo2 .graphical_texts .graphical_bottom h1 {
+          font-size: 6vw;
+          line-height: 1.5vw;
+          margin-bottom: 4vw; } }
+    .ronaldo2 .graphical_texts .graphical_bottom .botTwo {
+      color: #e7eb05;
+      font-size: 1.2vw;
+      font-weight: 300;
+      letter-spacing: 2px;
+      line-height: 1vw;
+      padding-bottom: 4rem; }
+      @media only screen and (max-width: 56.25em) {
+        .ronaldo2 .graphical_texts .graphical_bottom .botTwo {
+          font-size: 2vw;
+          line-height: 1.5vw;
+          margin-bottom: 2vw; } }
+  .ronaldo2 .graphical_image {
+    position: absolute;
+    bottom: 0 !important;
+    max-width: 35vw;
+    left: 0; }
+    @media only screen and (max-width: 56.25em) {
+      .ronaldo2 .graphical_image {
+        left: -16vw;
+        max-width: 45vw; } }
+    .ronaldo2 .graphical_image img {
+      max-width: 100%;
+      height: auto; }
+
+.nagamoto {
+  position: relative;
+  width: 70%;
+  margin: 0 auto; }
+  .nagamoto .graphical_texts .graphical_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    clip-path: polygon(15vw 0, 60vw 0, 60vw 100%, 15vw 100%);
+    min-height: 30vh;
+    width: 100%;
+    background-color: rgba(43, 43, 43, 0.52);
+    text-align: right;
+    padding-right: 13vw; }
+    @media only screen and (max-width: 56.25em) {
+      .nagamoto .graphical_texts .graphical_top {
+        padding-left: 20vw; } }
+    .nagamoto .graphical_texts .graphical_top .topOne {
+      margin-top: 2rem; }
+      .nagamoto .graphical_texts .graphical_top .topOne h2 {
+        color: #39d3db;
+        font-size: 3vw;
+        font-weight: 900;
+        letter-spacing: 3px;
+        line-height: 2.5vw; }
+        @media only screen and (max-width: 56.25em) {
+          .nagamoto .graphical_texts .graphical_top .topOne h2 {
+            font-size: 3vw;
+            line-height: 1.5vw;
+            margin-bottom: 2vw; } }
+    .nagamoto .graphical_texts .graphical_top .topTwo {
+      font-size: 2vw;
+      font-weight: 300;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      line-height: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .nagamoto .graphical_texts .graphical_top .topTwo {
+          font-size: 3vw;
+          line-height: 1.5vw;
+          margin-bottom: 2vw; } }
+    .nagamoto .graphical_texts .graphical_top .topThree {
+      margin-bottom: 4rem;
+      font-size: 1.5rem;
+      font-weight: 300; }
+    .nagamoto .graphical_texts .graphical_top .topFour {
+      font-size: 1vw;
+      font-weight: 300;
+      line-height: 1vw; }
+      @media only screen and (max-width: 56.25em) {
+        .nagamoto .graphical_texts .graphical_top .topFour {
+          line-height: 2vw; } }
+    .nagamoto .graphical_texts .graphical_top .topFive {
+      margin-bottom: 4rem;
+      font-size: 1.5rem;
+      font-weight: 300; }
+      @media only screen and (max-width: 56.25em) {
+        .nagamoto .graphical_texts .graphical_top .topFive {
+          font-size: 1rem; } }
+    .nagamoto .graphical_texts .graphical_top .top_image {
+      margin-top: 2rem; }
+      .nagamoto .graphical_texts .graphical_top .top_image img {
+        max-width: 100%;
+        height: auto; }
+  .nagamoto .graphical_texts .graphical_bottom {
+    clip-path: polygon(15vw 0, 60vw 0, 45vw 100%, 0 100%);
+    background-color: rgba(206, 209, 13, 0.42);
+    padding-left: 30vw;
+    margin: 0;
+    min-height: 25vh; }
+    @media only screen and (max-width: 56.25em) {
+      .nagamoto .graphical_texts .graphical_bottom {
+        padding-left: 22vw; } }
+    .nagamoto .graphical_texts .graphical_bottom h1 {
+      color: #e7eb05;
+      font-size: 8.3rem;
+      font-weight: 400;
+      letter-spacing: 3px;
+      font-style: italic;
+      padding-top: 5rem; }
+      @media only screen and (max-width: 56.25em) {
+        .nagamoto .graphical_texts .graphical_bottom h1 {
+          font-size: 6vw;
+          line-height: 1.5vw;
+          margin-bottom: 4vw; } }
+    .nagamoto .graphical_texts .graphical_bottom .botTwo {
+      color: #e7eb05;
+      font-size: 1.2vw;
+      font-weight: 300;
+      letter-spacing: 2px;
+      line-height: 1vw;
+      padding-bottom: 4rem; }
+      @media only screen and (max-width: 56.25em) {
+        .nagamoto .graphical_texts .graphical_bottom .botTwo {
+          font-size: 2vw;
+          line-height: 1.5vw;
+          margin-bottom: 2vw; } }
+  .nagamoto .graphical_image {
+    position: absolute;
+    bottom: 0 !important;
+    max-width: 35vw;
+    left: 0; }
+    @media only screen and (max-width: 56.25em) {
+      .nagamoto .graphical_image {
+        left: -16vw;
+        max-width: 45vw; } }
+    .nagamoto .graphical_image img {
+      max-width: 100%;
+      height: auto; }
 
 .news_container {
   padding-top: 10rem; }

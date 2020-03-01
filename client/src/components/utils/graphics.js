@@ -40,7 +40,7 @@ export const GraphicalOne = ({h2One = null, bottomOne = null, topTwo = null, h2T
     );
 };
 
-export const GraphicalImageRight = ({topOne = null, topTwo = null, topThree = null, topFour = null, topFive = null, botOne = null, botTwo = null, image = '', className = null}) => {
+export const GraphicalImageRight = ({topOne = null, topTwo = null, topThree = null, topFour = null, topFourB = null, topFive = null, botOne = null, botTwo = null, image = '', className = null}) => {
     return (
         <div className =  {className || 'graphical_image_right' }>
             <div className='graphical_texts'>
@@ -73,6 +73,13 @@ export const GraphicalImageRight = ({topOne = null, topTwo = null, topThree = nu
                         }
                     </div>
                     </Slide>
+                    <div className='topFourB'>
+                        {topFourB && topFourB.length > 0 ? 
+                            topFourB.map( (item, i) => <p key={i}>{item}</p>)
+                        :null
+                        }
+                    </div>
+                    <div className='topFive'>{topFive}</div>
                 </div>
                 <div className='graphical_bottom'>
                     <Slide right >
@@ -94,7 +101,7 @@ export const GraphicalImageRight = ({topOne = null, topTwo = null, topThree = nu
     );
 };
 
-export const GraphicalImageLeft = ({topOne = null, topTwo = null, topThree = null , topFour = null, topFive = null, botOne = null, botTwo = null, image = '', className = null }) => {
+export const GraphicalImageLeft = ({topOne = null, topTwo = null, topThree = null , topFour = null, topFourB = null, topFive = null, botOne = null, botTwo = null, image = '', topImage = null, className = null }) => {
     return (
         <div className = {className || 'graphical_image_left' }>
             <div className='graphical_texts'>
@@ -107,6 +114,10 @@ export const GraphicalImageLeft = ({topOne = null, topTwo = null, topThree = nul
                         :null
                         }
                     </div>
+                    {topImage ?
+                        <div className='top_image'><img src={topImage[0]} alt={topImage[1]}/></div>
+                    :null
+                    }
                     
                     <Slide right >
                     <div className='topTwo'>
@@ -122,6 +133,12 @@ export const GraphicalImageLeft = ({topOne = null, topTwo = null, topThree = nul
                     <div className='topFour'>
                         {topFour && topFour.length > 0 ? 
                             topFour.map( (item, i) => <p key={i}>{item}</p>)
+                        :null
+                        }
+                    </div>
+                    <div className='topFourB'>
+                        {topFourB && topFourB.length > 0 ? 
+                            topFourB.map( (item, i) => <p key={i}>{item}</p>)
                         :null
                         }
                     </div>
