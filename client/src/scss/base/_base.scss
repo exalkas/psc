@@ -48,7 +48,7 @@ body {
     // -webkit-background-size: cover;
     // -moz-background-size: cover;
     // -o-background-size: cover;
-    background-size: cover;
+    background-size: auto;
     
     background-attachment: fixed;
     background-position: center;
@@ -56,6 +56,10 @@ body {
     // background-image: url('http://alkis.torch.technology/images/background.webp');
 
     padding-bottom: 5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        background-attachment: initial;
+    }
 }
 
 .page_container {
