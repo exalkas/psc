@@ -245,9 +245,9 @@ class Header extends Component {
                 <div className='language_selector_container' >
                     <div className="lang_icon"><FaGlobe/></div>
                     <Dropdown options={this.state.options} onChange={this.handleOnSelect} value={this.state.ddValue} placeholder="Select an option" />
+                    <ToastContainer autoClose={3000} />
                 </div>
                 </div>
-                <ToastContainer autoClose={3000} />
             </div>
         );
     }

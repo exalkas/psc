@@ -41,13 +41,15 @@
         }
 
         h1 {
-            font-size: 4vw; //7.4rem;
-            font-family: 'arial black';
+            font-size: 6vw; //7.4rem;
+            font-family: $font2;
             color: $font-color2;
             margin: 0;
+            letter-spacing: 5px;
 
             @media only screen and (max-width: $bp-medium) {
-                font-size: 6vw;
+                font-size: 8vw;
+                letter-spacing: 3px;
             }
         }
         

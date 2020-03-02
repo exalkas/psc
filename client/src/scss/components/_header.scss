@@ -29,7 +29,8 @@
 
     @media only screen and (max-width: $bp-medium) {
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
+        justify-content: space-between;
         padding-top: 5rem;
         // height: 20rem;
     }
@@ -40,13 +41,19 @@
         align-items: center;
 
         @media only screen and (max-width: $bp-medium) {
-            margin-bottom: 2rem;
+            padding-left: 2rem;
+            // margin-bottom: 2rem;
         }
     }
 
     .menu_wrapper {
         display: flex;
         align-items: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            padding-right: 2rem;
+            // margin-bottom: 2rem;
+        }
 
         .menu_container {
             margin-right: 2rem;
