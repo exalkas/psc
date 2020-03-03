@@ -222,7 +222,6 @@ class Header extends Component {
                            >
                                <div className="ddBurgerMenuContainer" >
                                    <ul>
-           
                                        <li className ='menu_li_item' onClick={this.handleBurgerDDLinkClick}><Link to='/'>{MENU.home[this.state.locale]}</Link></li>
                                        <li className ='menu_li_item' onClick={this.handleBurgerDDLinkClick}><Link to='/thepsc'>{MENU.thePSC[this.state.locale]}</Link></li>
                                        <li className ='menu_li_item' onClick={this.handleBurgerDDLinkClick}><Link to='/joinpsc'>{MENU.joinPSC[this.state.locale]}</Link></li>

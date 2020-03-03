@@ -167,3 +167,7 @@ export const GraphicalImageLeft = ({topOne = null, topTwo = null, topThree = nul
 export const EmptyRightStripe = () => (
     <div className='empty_stripe_right'></div>
 )
+
+export const EmptyLeftStripe = () => (
+        <div className='empty_stripe_left'></div>
+)

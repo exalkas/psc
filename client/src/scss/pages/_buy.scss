@@ -9,6 +9,10 @@
         width: 80vw;
     }
 
+    @media only screen and (min-width: $bp-max) {
+        padding-top: 25rem;
+    }
+
     .first_div {
         width:100%;
 
