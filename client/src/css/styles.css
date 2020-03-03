@@ -82,7 +82,7 @@ body {
 .buy_container {
   width: 60vw;
   margin: 0 auto;
-  min-height: 80vh;
+  min-height: 90vh;
   padding-top: 10rem; }
   @media only screen and (max-width: 56.25em) {
     .buy_container {
@@ -214,6 +214,37 @@ body {
       .buy_container button {
         width: 20vw; } }
 
+.disclaimer_container {
+  min-height: 100vh;
+  width: 60vw;
+  margin: 0 auto;
+  padding-top: 10rem; }
+  @media only screen and (max-width: 56.25em) {
+    .disclaimer_container {
+      padding-top: 15rem;
+      width: 80vw; } }
+  .disclaimer_container h2, .disclaimer_container h3 {
+    color: #39d3db;
+    font-weight: 400;
+    font-size: 2.5vw; }
+    @media only screen and (max-width: 56.25em) {
+      .disclaimer_container h2, .disclaimer_container h3 {
+        font-size: 4vw; } }
+  .disclaimer_container p {
+    font-weight: 300;
+    font-size: 1.5vw; }
+    @media only screen and (max-width: 56.25em) {
+      .disclaimer_container p {
+        font-size: 3vw; } }
+  .disclaimer_container ol, .disclaimer_container ul {
+    padding-left: 2rem; }
+    .disclaimer_container ol li, .disclaimer_container ul li {
+      font-weight: 300;
+      font-size: 1.5vw; }
+      @media only screen and (max-width: 56.25em) {
+        .disclaimer_container ol li, .disclaimer_container ul li {
+          font-size: 3vw; } }
+
 .footer_container {
   display: flex;
   width: 100%;
@@ -238,7 +269,8 @@ body {
   line-height: 4rem;
   color: #2b2b2b;
   border-radius: 5rem;
-  font-size: 1.2vw; }
+  font-size: 1.2vw;
+  font-weight: 700; }
   @media only screen and (max-width: 68.75em) {
     .footer_center {
       font-size: 2vw; } }
@@ -256,30 +288,38 @@ body {
   align-items: center;
   padding-right: 1rem;
   z-index: 999; }
-  .footer_right a:hover {
-    text-decoration: none !important; }
-  .footer_right .bottom_button {
-    width: 4rem;
-    height: 4rem;
-    font-size: 2.5vw;
-    background-color: #e7eb05;
-    text-align: center;
-    color: #2b2b2b;
-    line-height: 2.5vw;
-    border-radius: 50rem;
+  .footer_right a {
     display: flex;
-    align-content: baseline;
+    align-content: center;
     justify-content: center;
-    border: none;
-    margin: 0; }
-    @media only screen and (max-width: 68.75em) {
-      .footer_right .bottom_button {
-        font-size: 2vw; } }
-    .footer_right .bottom_button:hover {
-      cursor: pointer;
-      text-decoration: none !important;
-      background-color: #39d3db;
-      border: solid #39d3db 0px; }
+    outline: none;
+    text-decoration: none; }
+    .footer_right a:hover {
+      text-decoration: none !important; }
+    .footer_right a .bottom_button {
+      width: 4rem;
+      height: 4rem;
+      font-size: 2.5vw;
+      background-color: #e7eb05;
+      text-align: center;
+      color: #2b2b2b;
+      line-height: 2.5vw;
+      border-radius: 50rem;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      border: none;
+      margin: 0;
+      outline: none; }
+      @media only screen and (max-width: 56.25em) {
+        .footer_right a .bottom_button {
+          font-size: 5vw;
+          line-height: 3rem; } }
+      .footer_right a .bottom_button:hover {
+        cursor: pointer;
+        text-decoration: none !important;
+        background-color: #39d3db;
+        border: solid #39d3db 0px; }
 
 /*============================
             HEADER

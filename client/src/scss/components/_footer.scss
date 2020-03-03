@@ -31,6 +31,7 @@
     color: $font-color4;
     border-radius: 5rem;
     font-size: 1.2vw;//1.2rem;
+    font-weight: 700;
 
     @media only screen and (max-width: $bp-large) {
         font-size: 2vw;//1.2rem;
@@ -53,41 +54,51 @@
     padding-right: 1rem;
     z-index: 999;
 
-    a:hover {
-        text-decoration: none !important;
-    }
-
-    .bottom_button {
-        width: 4rem;
-        height: 4rem;
-        font-size: 2.5vw;//1.2rem;
-        background-color: $font-color3;
-        text-align: center;
-        color: $font-color4;
-        line-height: 2.5vw;
-        border-radius: 50rem;
-
+    a {
         display: flex;
-        align-content: baseline;
+        align-content: center;
         justify-content: center;
+        outline: none;
+        text-decoration: none;
         
-        border: none;
-        margin: 0;
-
-
-
-        @media only screen and (max-width: $bp-large) {
-            font-size: 2vw;//1.2rem;
-        }
 
         &:hover {
-            cursor: pointer;
             text-decoration: none !important;
-            background-color: $font-color2;
-            border: solid $font-color2 0px;
         }
 
-        
+        .bottom_button {
+            width: 4rem;
+            height: 4rem;
+            font-size: 2.5vw;//1.2rem;
+            background-color: $font-color3;
+            text-align: center;
+            color: $font-color4;
+            line-height: 2.5vw;
+            border-radius: 50rem;
+    
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            
+            border: none;
+            margin: 0;
+            outline: none;
+
+    
+            @media only screen and (max-width: $bp-medium) {
+                font-size: 5vw;//1.2rem;
+                line-height: 3rem;
+            }
+    
+            &:hover {
+                cursor: pointer;
+                text-decoration: none !important;
+                background-color: $font-color2;
+                border: solid $font-color2 0px;
+            }
+    
+            
+        }
     }
 }
 
