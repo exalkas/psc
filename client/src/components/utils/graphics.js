@@ -68,7 +68,13 @@ export const GraphicalImageRight = ({topOne = null, topTwo = null, topThree = nu
                     <Slide right >
                     <div className='topFour'>
                         {topFour && topFour.length > 0 ? 
-                            topFour.map( (item, i) => <p key={i}>{item}</p>)
+                            topFour.map( (item, i) => 
+                                <p key={i}>
+                                    {
+                                        item === ' ' ? '\u00A0'
+                                        : item
+                                    }
+                                </p>)
                         :null
                         }
                     </div>
@@ -132,7 +138,14 @@ export const GraphicalImageLeft = ({topOne = null, topTwo = null, topThree = nul
                     </Fade>
                     <div className='topFour'>
                         {topFour && topFour.length > 0 ? 
-                            topFour.map( (item, i) => <p key={i}>{item}</p>)
+                            topFour.map( (item, i) => 
+                            
+                            <p key={i}>
+                            {
+                                item === ' ' ? '\u00A0'
+                                : item
+                            }
+                            </p>)
                         :null
                         }
                     </div>
@@ -170,4 +183,76 @@ export const EmptyRightStripe = () => (
 
 export const EmptyLeftStripe = () => (
         <div className='empty_stripe_left'></div>
-)
+);
+
+export const GraphicalImageLeftBotArray = ({topOne = null, topTwo = null, topThree = null , topFour = null, topFourB = null, topFive = null, bot = null, image = '', topImage = null, className = null }) => {
+    return (
+        <div className = {className || 'graphical_image_left' }>
+            <div className='graphical_texts'>
+                <div className='graphical_top'>
+                    
+                    <div className='topOne'>
+                        {topOne && topOne.length > 0 ? 
+                            topOne.map( (item, i) => <h2 key = {i}>{item}</h2>
+                        )
+                        :null
+                        }
+                    </div>
+                    {topImage ?
+                        <div className='top_image'><img src={topImage[0]} alt={topImage[1]}/></div>
+                    :null
+                    }
+                    
+                    <Slide right >
+                    <div className='topTwo'>
+                        {topTwo && topTwo.length > 0 ? 
+                            topTwo.map( (item, i) => <p key={i}>{item}</p>)
+                        :null
+                        }
+                    </div>
+                    </Slide>
+                    <Fade left big cascade>
+                        <div className='topThree'>{topThree}</div>
+                    </Fade>
+                    <div className='topFour'>
+                        {topFour && topFour.length > 0 ? 
+                            topFour.map( (item, i) => 
+                            
+                            <p key={i}>
+                            {
+                                item === ' ' ? '\u00A0'
+                                : item
+                            }
+                            </p>)
+                        :null
+                        }
+                    </div>
+                    <div className='topFourB'>
+                        {topFourB && topFourB.length > 0 ? 
+                            topFourB.map( (item, i) => <p key={i}>{item}</p>)
+                        :null
+                        }
+                    </div>
+                    <div className='topFive'>{topFive}</div>
+                </div>
+                <div className='graphical_bottom'>
+                    {
+                        bot && bot.length > 0 ? 
+                            bot.map((item, i) => 
+                                <>
+                                    <Slide right ><h1 key = {i}>{item.h1}</h1></Slide>
+                                    <Slide left >{
+                                        item.p.map((itemp, i) => 
+                                            <p className='bot_array' key = {10 + i}>{itemp}</p>)
+                                    }
+                                    </Slide>
+                                </>
+                            )
+                        :null                            
+                    }
+                </div>
+            </div>
+            <div className='graphical_image'><img src={image[0]} alt={image[1]}/></div>
+        </div>
+    );
+};
