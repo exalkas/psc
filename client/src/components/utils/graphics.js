@@ -40,7 +40,7 @@ export const GraphicalOne = ({h2One = null, bottomOne = null, topTwo = null, h2T
     );
 };
 
-export const GraphicalImageRight = ({topOne = null, topTwo = null, topThree = null, topFour = null, topFourB = null, topFive = null, botOne = null, botTwo = null, image = '', className = null}) => {
+export const GraphicalImageRight = ({topOne = null, topTwo = null, topThree = null, topFour = null, topFourB = null, topFive = null, button = null, botOne = null, botTwo = null, image = '', className = null}) => {
     return (
         <div className =  {className || 'graphical_image_right' }>
             <div className='graphical_texts'>
@@ -86,6 +86,11 @@ export const GraphicalImageRight = ({topOne = null, topTwo = null, topThree = nu
                         }
                     </div>
                     <div className='topFive'>{topFive}</div>
+                    {
+                        button ?
+                            <div className='top_button>'><button>{button}</button></div>
+                        : null
+                    }
                 </div>
                 <div className='graphical_bottom'>
                     <Slide right >
@@ -107,7 +112,7 @@ export const GraphicalImageRight = ({topOne = null, topTwo = null, topThree = nu
     );
 };
 
-export const GraphicalImageLeft = ({topOne = null, topTwo = null, topThree = null , topFour = null, topFourB = null, topFive = null, botOne = null, botTwo = null, image = '', topImage = null, className = null }) => {
+export const GraphicalImageLeft = ({topOne = null, topTwo = null, topThree = null , topFour = null, topFourB = null, topFive = null, button = null, botOne = null, botTwo = null, image = '', topImage = null, className = null }) => {
     return (
         <div className = {className || 'graphical_image_left' }>
             <div className='graphical_texts'>
@@ -156,6 +161,11 @@ export const GraphicalImageLeft = ({topOne = null, topTwo = null, topThree = nul
                         }
                     </div>
                     <div className='topFive'>{topFive}</div>
+                    {
+                        button ?
+                            <div className='top_button>'><button>{button}</button></div>
+                        : null
+                    }
                 </div>
                 <div className='graphical_bottom'>
                     <Slide right >
@@ -185,7 +195,7 @@ export const EmptyLeftStripe = () => (
         <div className='empty_stripe_left'></div>
 );
 
-export const GraphicalImageLeftBotArray = ({topOne = null, topTwo = null, topThree = null , topFour = null, topFourB = null, topFive = null, bot = null, image = '', topImage = null, className = null }) => {
+export const GraphicalImageLeftBotArray = ({topOne = null, topTwo = null, topThree = null , topFour = null, topFourB = null, topFive = null, bot = null, button = null, image = '', topImage = null, className = null }) => {
     return (
         <div className = {className || 'graphical_image_left' }>
             <div className='graphical_texts'>
@@ -234,6 +244,87 @@ export const GraphicalImageLeftBotArray = ({topOne = null, topTwo = null, topThr
                         }
                     </div>
                     <div className='topFive'>{topFive}</div>
+                    {
+                        button ?
+                            <div className='top_button>'><button>{button}</button></div>
+                        : null
+                    }
+                </div>
+                <div className='graphical_bottom'>
+                    {
+                        bot && bot.length > 0 ? 
+                            bot.map((item, i) => 
+                                <>
+                                    <Slide right ><h1 key = {i}>{item.h1}</h1></Slide>
+                                    <Slide left >{
+                                        item.p.map((itemp, i) => 
+                                            <p className='bot_array' key = {10 + i}>{itemp}</p>)
+                                    }
+                                    </Slide>
+                                </>
+                            )
+                        :null                            
+                    }
+                </div>
+            </div>
+            <div className='graphical_image'><img src={image[0]} alt={image[1]}/></div>
+        </div>
+    );
+};
+
+export const GraphicalImageRightBotArray = ({topOne = null, topTwo = null, topThree = null, topFour = null, topFourB = null, topFive = null, bot = null, button = null, image = '', className = null}) => {
+    return (
+        <div className =  {className || 'graphical_image_right' }>
+            <div className='graphical_texts'>
+                <div className='graphical_top'>
+                    
+                    <div className='topOne'>
+                        {topOne && topOne.length > 0 ? 
+                            topOne.map( (item, i) => <h2 key = {i}>{item}</h2>
+                        )
+                        :null
+                        }
+                    </div>
+                    
+                    <Slide right >
+                    <div className='topTwo'>
+                        {topTwo && topTwo.length > 0 ? 
+                            topTwo.map( (item, i) => <p key={i}>{item}</p>)
+                        :null
+                        }
+                    </div>
+                    </Slide>
+                    <Fade left big cascade>
+                        <div className='topThree'>{topThree}</div>
+                    </Fade>
+                    <Slide right >
+                    <div className='topFour'>
+                        {topFour && topFour.length > 0 ? 
+                            topFour.map( (item, i) => 
+                                <p key={i}>
+                                    {
+                                        item === ' ' ? '\u00A0'
+                                        : item
+                                    }
+                                </p>)
+                        :null
+                        }
+                    </div>
+                    </Slide>
+                    <div className='topFourB'>
+                        {topFourB && topFourB.length > 0 ? 
+                            topFourB.map( (item, i) => <p key={i}>{item}</p>)
+                        :null
+                        }
+                    </div>
+                    <div className='topFive'>{topFive}</div>
+
+                    {
+                        button ?
+                            <div className='top_button>'><button>{button}</button></div>
+                        : null
+                    }
+                    
                 </div>
                 <div className='graphical_bottom'>
                     {

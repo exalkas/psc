@@ -1,4 +1,4 @@
-export const JOPINPSCTEXTS = {
+export const JOINPSCTEXTS = {
     firstTopOne: {
         en: [
             'THE ',
@@ -122,10 +122,10 @@ export const JOPINPSCTEXTS = {
 ////////////////////
     secondTopOne: {
         en: [
-            'PRE-SALES'
+            'PRE-SALES',' '
         ],
         de: [
-            'PRE-SALES'
+            'PRE-SALES',' '
         ]
     },
     secondTopTwo: {
@@ -195,7 +195,7 @@ export const JOPINPSCTEXTS = {
         en: [
             {
                 h1: '50%',
-                p:  [],
+                p:  ['', ''],
             },
             {
                 h1: 'DISCOUNT',
@@ -448,8 +448,8 @@ export const JOPINPSCTEXTS = {
             'GUIDE'
         ],
         de: [
-            'PROOF OF',
-            'CONCEPT'
+            'PURCHASE',
+            'GUIDE'
         ]
     },
     fifthTopTwo: {
@@ -461,48 +461,28 @@ export const JOPINPSCTEXTS = {
             'PROCEDURE'
         ],
         de: [
-            'PRO SPORT COIN MEANS:',
-            'PREDICTING THE FUTURE',
-            'WITH 85% ACCURACY!'
+            'PRO SPORT COIN',
+            'MEANS',
+            'SECURE KYC',
+            'AND PURCHASE',
+            'PROCEDURE'
         ]
-    },
-    fifthTopFour: {
-        en: [
-            'AFTER 3 YEARS OF ADVANCED TESTING OUR',
-            'PROJECTIONS HAVE BEEN CONFIRMED WITH AN',
-            'ACCURACY OF OVER 85%. THIS CONFIRMS THE HIGH',
-            'PREDICTIVE STRENGTH OF THE ALGORITHM.',
-            "ADDITIONALLY, OFFICIAL DATA OF THE FIFA`S GLOBAL",
-            "TRANSFER MARKET REPORT, DELOITTE`S FOOTBALL",
-            "MONEY LEAGUE REPORT AND KPMG`S FOOTBALL",
-            'BENCHMARK CONFIRM OUR ALGORITHM.'
-        ],
-        de: [
-            'AFTER 3 YEARS OF ADVANCED TESTING OUR',
-            'PROJECTIONS HAVE BEEN CONFIRMED WITH AN',
-            'ACCURACY OF OVER 85%. THIS CONFIRMS THE HIGH',
-            'PREDICTIVE STRENGTH OF THE ALGORITHM.',
-            "ADDITIONALLY, OFFICIAL DATA OF THE FIFA`S GLOBAL",
-            "TRANSFER MARKET REPORT, DELOITTE`S FOOTBALL",
-            "MONEY LEAGUE REPORT AND KPMG`S FOOTBALL",
-            'BENCHMARK CONFIRM OUR ALGORITHM.'
-        ]
-    },
-    fifthTopFive: {
-        en: 'go back to the main page',
-        de: 'go back to the main page'
-    },
-    fifthBotOne: {
-        en: '85%',
-        de: '85%'
     },
     fifthBotTwo: {
         en: [
-            'ACCURACY'
+            'CONTACT YOUR',
+            'COUNTRY AGENT',
+            'NOW'
             ],
         de:[
-            'ACCURACY'
+            'CONTACT YOUR',
+            'COUNTRY AGENT',
+            'NOW'
         ]
+    },
+    buttonContact: {
+        en: 'CLICK TO CONTACT',
+        de: 'KLICKEN SIE, UM KONTAKTIEREN'
     },
     buttonRead: {
         en: 'READ MORE',
@@ -511,6 +491,10 @@ export const JOPINPSCTEXTS = {
     buttonJoin: {
         en: 'CLICK TO JOIN',
         de: 'KLICKEN, UM BEITRETEN'
+    },
+    buttonGuide: {
+        en: 'CLICK FOR THE PURCHASE GUIDE',
+        de: 'KLICKEN SIE FÜR DEN KAUFHANDBUCH'
     }
 
 }
