@@ -185,10 +185,18 @@
     }
 
     .button_container {
-        width: 100%;
+        width: 60%;
         display: flex;
         justify-content: center;
         margin-bottom: 4rem;
+
+        @media only screen and (min-width: $bp-largest) {
+            width: 50%;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+        }
 
         button {
             background: transparent;

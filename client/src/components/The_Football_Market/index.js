@@ -35,13 +35,14 @@ class TheFootballMarket extends Component {
         
     render() {
         return (
-            <div className='home_container'>
+            <div className='market_container'>
                 <EmptyRightStripe />
                 <GraphicalImageLeft 
                     topOne = {THEMARKETTEXTS.firstTopOne[this.state.locale]} 
                     topTwo = {THEMARKETTEXTS.firstTopTwo[this.state.locale]}
                     topFour = {THEMARKETTEXTS.firstTopFour[this.state.locale]}
                     topFive = {THEMARKETTEXTS.firstTopFive[this.state.locale]}
+                    className='higuainWho'
                 />
                 <GraphicalImageRight 
                     topOne = {THEMARKETTEXTS.secondTopOne[this.state.locale]} 
@@ -52,6 +53,7 @@ class TheFootballMarket extends Component {
                     botOne = {THEMARKETTEXTS.secondBotOne[this.state.locale]}
                     botTwo = {THEMARKETTEXTS.secondBotTwo[this.state.locale]}    
                     image = {[Mbappe, 'Mbappe']}
+                    className = 'mbappe'
                 />
                 <GraphicalImageLeft 
                     topOne = {THEMARKETTEXTS.thirdTopOne[this.state.locale]} 
@@ -60,7 +62,7 @@ class TheFootballMarket extends Component {
 
                     botOne = {THEMARKETTEXTS.thirdBotOne[this.state.locale]}
                     botTwo = {THEMARKETTEXTS.thirdBotTwo[this.state.locale]}   
-                    className = 'ronaldo2'
+                    className='ronaldoLeftWho'
                     image = {[Ronaldo, 'Ronaldo']}
                 />
                 <GraphicalImageRight 
@@ -72,12 +74,15 @@ class TheFootballMarket extends Component {
                     botOne = {THEMARKETTEXTS.fourthBotOne[this.state.locale]}
                     botTwo = {THEMARKETTEXTS.fourthBotTwo[this.state.locale]}  
                     image = {[Ibra, 'Ibrahimovic']}
+                    className='ibrahimovic'
+                    // className = 'ronaldoWho'
                 />
                 <GraphicalImageLeft 
                     topOne = {THEMARKETTEXTS.fifthTopOne[this.state.locale]} 
                     topFive = {THEMARKETTEXTS.fifthTopFive[this.state.locale]}  
                     topImage = {[NeymarImage, 'Neymar Graph']}
                     image = {[Neymar, 'Neymar']}
+                    className='neymar2'
                 />
                 <GraphicalImageRight 
                     topOne = {THEMARKETTEXTS.sixTopOne[this.state.locale]} 
@@ -86,13 +91,15 @@ class TheFootballMarket extends Component {
                     topFourB = {THEMARKETTEXTS.sixTopFourB[this.state.locale]}
                     topFive = {THEMARKETTEXTS.sixTopFive[this.state.locale]}  
                     image = {[Martial, 'Martial']}
+                    className = 'martialWho'
                 />
                 <GraphicalImageLeft 
                     topOne = {THEMARKETTEXTS.sevenTopOne[this.state.locale]} 
                     topTwo = {THEMARKETTEXTS.sevenTopTwo[this.state.locale]}
                     topFour = {THEMARKETTEXTS.sevenTopFour[this.state.locale]}
                     topFive = {THEMARKETTEXTS.sevenTopFive[this.state.locale]}         
-                    className= 'nagamoto'
+                    className='nagatomoWho'
+                    // className= 'nagamoto'
                     image = {[Nagatomo, 'Nagatomo']}
                 />
             </div>

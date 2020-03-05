@@ -56,6 +56,7 @@ class HomePage extends Component {
                     botOne = {HOMEPAGETEXTS.fourthBotOne[this.state.locale]}
                     botTwo = {HOMEPAGETEXTS.fourthBotTwo[this.state.locale]}
                     image = {[Neymar, 'Neymar']}
+                    className= 'neymar'
                 />
                 <GraphicalImageRight 
                     topOne = {HOMEPAGETEXTS.fifthTopOne[this.state.locale]} 

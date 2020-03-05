@@ -34,13 +34,13 @@ class ThePsc extends Component {
         
     render() {
         return (
-            <div className='who_container'>
+            <div className='thepsc_container'>
                 <EmptyRightStripe />
                 <GraphicalImageLeft 
                     topOne = {THEPSCTEXTS.firstTopOne[this.state.locale]} 
                     topTwo = {THEPSCTEXTS.firstTopTwo[this.state.locale]}
                     topFour = {THEPSCTEXTS.firstTopFour[this.state.locale]}
-                    className= 'neymarWho'
+                    className= 'higuainWho'
                     image = {[HIGUAIN, 'Higuain']}
                 />
                 <GraphicalImageRight 
