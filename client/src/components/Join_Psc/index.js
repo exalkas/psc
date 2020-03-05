@@ -50,7 +50,7 @@ class JoinPsc extends Component {
                     topFour = {JOINPSCTEXTS.thirdTopFour[this.state.locale]}
                     bot = {JOINPSCTEXTS.thirdBot[this.state.locale]}
                     button = {JOINPSCTEXTS.buttonJoin[this.state.locale]}
-                    className= 'robbenWho'
+                    className= 'neymarWho'
                 />
                 <GraphicalImageRightBotArray // 4th
                     topOne = {JOINPSCTEXTS.fourthTopOne[this.state.locale]} 
@@ -64,7 +64,7 @@ class JoinPsc extends Component {
                     topTwo = {JOINPSCTEXTS.fifthTopTwo[this.state.locale]}
                     botTwo = {JOINPSCTEXTS.fifthBotTwo[this.state.locale]}
                     button = {JOINPSCTEXTS.buttonGuide[this.state.locale]}
-                    className= 'robbenWho'
+                    className= 'neymarWho'
                 />
             </div>
         );

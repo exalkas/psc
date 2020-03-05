@@ -252,6 +252,564 @@ body {
         .disclaimer_container ol li, .disclaimer_container ul li {
           font-size: 3vw; } }
 
+.joinpsc_container {
+  min-height: 100vh;
+  width: 70%;
+  margin: 0 auto; }
+  @media only screen and (max-width: 56.25em) {
+    .joinpsc_container {
+      width: 80vw; } }
+  .joinpsc_container .ronaldoWho {
+    position: relative;
+    margin: 0 auto; }
+    .joinpsc_container .ronaldoWho .graphical_texts .graphical_top {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+      clip-path: polygon(0 0, 45vw 0, 45vw 100%, 0 100%);
+      min-height: 30vh;
+      width: 100%;
+      background-color: rgba(43, 43, 43, 0.52);
+      padding-left: 5vw; }
+      .joinpsc_container .ronaldoWho .graphical_texts .graphical_top .topOne {
+        margin-top: 2rem; }
+        .joinpsc_container .ronaldoWho .graphical_texts .graphical_top .topOne h2 {
+          color: #39d3db;
+          font-size: 1.8vw;
+          font-weight: 900;
+          letter-spacing: 3px;
+          line-height: 2vw; }
+          @media only screen and (max-width: 56.25em) {
+            .joinpsc_container .ronaldoWho .graphical_texts .graphical_top .topOne h2 {
+              font-size: 3vw;
+              line-height: 3vw; } }
+      .joinpsc_container .ronaldoWho .graphical_texts .graphical_top .topTwo {
+        font-size: 1.3vw;
+        font-weight: 300;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        line-height: 1.5vw; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .ronaldoWho .graphical_texts .graphical_top .topTwo {
+            font-size: 1.8vw;
+            line-height: 2vw; } }
+      .joinpsc_container .ronaldoWho .graphical_texts .graphical_top .topThree {
+        margin-bottom: 4rem;
+        font-size: 1.5rem;
+        font-weight: 300; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .ronaldoWho .graphical_texts .graphical_top .topThree {
+            font-size: 1.8vw;
+            line-height: 2vw; } }
+      .joinpsc_container .ronaldoWho .graphical_texts .graphical_top .topFour {
+        font-size: 1vw;
+        font-weight: 300;
+        line-height: 1vw; }
+      .joinpsc_container .ronaldoWho .graphical_texts .graphical_top .topFourB {
+        margin-top: 3rem;
+        font-size: 1vw;
+        font-weight: 400;
+        line-height: 1.3vw;
+        color: #39d3db; }
+      .joinpsc_container .ronaldoWho .graphical_texts .graphical_top .topFive {
+        margin-bottom: 4rem;
+        font-size: 1.5rem;
+        font-weight: 300; }
+    .joinpsc_container .ronaldoWho .graphical_texts .graphical_bottom {
+      clip-path: polygon(0 0, 45vw 0, 60vw 100%, 15vw 100%);
+      background-color: rgba(206, 209, 13, 0.42);
+      padding-left: 15vw;
+      margin: 0;
+      min-height: 25vh; }
+      .joinpsc_container .ronaldoWho .graphical_texts .graphical_bottom h1 {
+        color: #e7eb05;
+        font-size: 6vw;
+        font-weight: 400;
+        letter-spacing: 3px;
+        font-style: italic;
+        padding-top: 5rem; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .ronaldoWho .graphical_texts .graphical_bottom h1 {
+            font-size: 6vw; } }
+      .joinpsc_container .ronaldoWho .graphical_texts .graphical_bottom p {
+        color: #e7eb05;
+        font-size: 1vw;
+        font-weight: 300;
+        letter-spacing: 2px;
+        line-height: 0.5vw; }
+        .joinpsc_container .ronaldoWho .graphical_texts .graphical_bottom p:last-child {
+          padding-bottom: 4rem; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .ronaldoWho .graphical_texts .graphical_bottom p {
+            font-size: 1.8vw;
+            line-height: 1vw; } }
+      .joinpsc_container .ronaldoWho .graphical_texts .graphical_bottom .botTwo {
+        color: #e7eb05;
+        font-size: 1vw;
+        font-weight: 300;
+        letter-spacing: 2px;
+        line-height: 0.5vw;
+        padding-bottom: 4rem; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .ronaldoWho .graphical_texts .graphical_bottom .botTwo {
+            font-size: 1.8vw;
+            line-height: 1vw; } }
+    .joinpsc_container .ronaldoWho .graphical_image {
+      position: absolute;
+      bottom: 0 !important;
+      right: 0;
+      max-width: 35vw; }
+      @media only screen and (max-width: 56.25em) {
+        .joinpsc_container .ronaldoWho .graphical_image {
+          right: -5vw;
+          max-width: 45vw; } }
+      .joinpsc_container .ronaldoWho .graphical_image img {
+        max-width: 100%;
+        height: auto; }
+  .joinpsc_container .neymarWho {
+    position: relative;
+    margin: 0 auto; }
+    .joinpsc_container .neymarWho .graphical_texts .graphical_top {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+      clip-path: polygon(15vw 0, 60vw 0, 60vw 100%, 15vw 100%);
+      min-height: 30vh;
+      width: 100%;
+      background-color: rgba(43, 43, 43, 0.52);
+      text-align: right;
+      padding-right: 13vw; }
+      @media only screen and (max-width: 56.25em) {
+        .joinpsc_container .neymarWho .graphical_texts .graphical_top {
+          padding-left: 20vw; } }
+      @media only screen and (max-width: 37.5em) {
+        .joinpsc_container .neymarWho .graphical_texts .graphical_top {
+          padding-right: 25vw; } }
+      .joinpsc_container .neymarWho .graphical_texts .graphical_top .topOne {
+        margin-top: 2rem; }
+        .joinpsc_container .neymarWho .graphical_texts .graphical_top .topOne h2 {
+          color: #39d3db;
+          font-size: 3vw;
+          font-weight: 900;
+          letter-spacing: 3px;
+          line-height: 2.5vw; }
+          @media only screen and (max-width: 56.25em) {
+            .joinpsc_container .neymarWho .graphical_texts .graphical_top .topOne h2 {
+              font-size: 3vw;
+              line-height: 1.5vw;
+              margin-bottom: 2vw; } }
+      .joinpsc_container .neymarWho .graphical_texts .graphical_top .topTwo {
+        font-size: 2vw;
+        font-weight: 300;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        line-height: 2rem; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .neymarWho .graphical_texts .graphical_top .topTwo {
+            font-size: 3vw;
+            line-height: 1.5vw;
+            margin-bottom: 2vw; } }
+      .joinpsc_container .neymarWho .graphical_texts .graphical_top .topThree {
+        margin-bottom: 4rem;
+        font-size: 1.5rem;
+        font-weight: 300; }
+      .joinpsc_container .neymarWho .graphical_texts .graphical_top .topFour {
+        font-size: 1vw;
+        font-weight: 300;
+        line-height: 1vw; }
+      .joinpsc_container .neymarWho .graphical_texts .graphical_top .topFive {
+        margin-bottom: 4rem;
+        font-size: 1.5rem;
+        font-weight: 300; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .neymarWho .graphical_texts .graphical_top .topFive {
+            font-size: 1rem; } }
+      .joinpsc_container .neymarWho .graphical_texts .graphical_top .top_image {
+        margin-top: 2rem; }
+        .joinpsc_container .neymarWho .graphical_texts .graphical_top .top_image img {
+          max-width: 100%;
+          height: auto; }
+    .joinpsc_container .neymarWho .graphical_texts .graphical_bottom {
+      clip-path: polygon(15vw 0, 60vw 0, 45vw 100%, 0 100%);
+      background-color: rgba(206, 209, 13, 0.42);
+      padding-left: 25vw;
+      margin: 0;
+      min-height: 25vh; }
+      @media only screen and (max-width: 56.25em) {
+        .joinpsc_container .neymarWho .graphical_texts .graphical_bottom {
+          padding-left: 22vw; } }
+      .joinpsc_container .neymarWho .graphical_texts .graphical_bottom h1 {
+        color: #e7eb05;
+        font-size: 8.3rem;
+        font-weight: 400;
+        letter-spacing: 3px;
+        font-style: italic;
+        padding-top: 5rem; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .neymarWho .graphical_texts .graphical_bottom h1 {
+            font-size: 6vw;
+            line-height: 1.5vw;
+            margin-bottom: 4vw; } }
+      .joinpsc_container .neymarWho .graphical_texts .graphical_bottom p {
+        color: #e7eb05;
+        font-size: 2vw;
+        font-weight: 300;
+        letter-spacing: 2px;
+        line-height: 1.5vw; }
+        .joinpsc_container .neymarWho .graphical_texts .graphical_bottom p:last-child {
+          padding-bottom: 4rem; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .neymarWho .graphical_texts .graphical_bottom p {
+            font-size: 1.8vw;
+            line-height: 1vw; } }
+      .joinpsc_container .neymarWho .graphical_texts .graphical_bottom .botTwo {
+        color: #e7eb05;
+        font-size: 1.2vw;
+        font-weight: 300;
+        letter-spacing: 2px;
+        line-height: 1vw;
+        padding-bottom: 4rem; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .neymarWho .graphical_texts .graphical_bottom .botTwo {
+            font-size: 2vw;
+            line-height: 1.5vw;
+            margin-bottom: 2vw; } }
+    .joinpsc_container .neymarWho .graphical_image {
+      position: absolute;
+      bottom: 0 !important;
+      max-width: 35vw;
+      left: 10vw; }
+      @media only screen and (max-width: 56.25em) {
+        .joinpsc_container .neymarWho .graphical_image {
+          left: -16vw;
+          max-width: 45vw; } }
+      .joinpsc_container .neymarWho .graphical_image img {
+        max-width: 100%;
+        height: auto; }
+  .joinpsc_container .baleWho {
+    position: relative;
+    margin: 0 auto; }
+    .joinpsc_container .baleWho .graphical_texts .graphical_top {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+      clip-path: polygon(0 0, 45vw 0, 45vw 100%, 0 100%);
+      min-height: 30vh;
+      width: 100%;
+      background-color: rgba(43, 43, 43, 0.52);
+      padding-left: 5vw; }
+      .joinpsc_container .baleWho .graphical_texts .graphical_top .topOne {
+        margin-top: 2rem; }
+        .joinpsc_container .baleWho .graphical_texts .graphical_top .topOne h2 {
+          color: #39d3db;
+          font-size: 2.8vw;
+          font-weight: 900;
+          letter-spacing: 3px;
+          line-height: 2vw; }
+          @media only screen and (max-width: 56.25em) {
+            .joinpsc_container .baleWho .graphical_texts .graphical_top .topOne h2 {
+              margin-bottom: 1vw; } }
+      .joinpsc_container .baleWho .graphical_texts .graphical_top .topTwo {
+        font-size: 3vw;
+        font-weight: 300;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        line-height: 2vw; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .baleWho .graphical_texts .graphical_top .topTwo {
+            font-size: 3vw;
+            line-height: 2vw;
+            margin-bottom: 2vw; } }
+      .joinpsc_container .baleWho .graphical_texts .graphical_top .topThree {
+        margin-bottom: 4rem;
+        font-size: 1.5rem;
+        font-weight: 300; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .baleWho .graphical_texts .graphical_top .topThree {
+            font-size: 3vw; } }
+      .joinpsc_container .baleWho .graphical_texts .graphical_top .topFour {
+        font-size: 1vw;
+        font-weight: 300;
+        line-height: 1vw; }
+      .joinpsc_container .baleWho .graphical_texts .graphical_top .topFive {
+        margin-bottom: 4rem;
+        font-size: 1.5rem;
+        font-weight: 300; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .baleWho .graphical_texts .graphical_top .topFive {
+            font-size: 1rem; } }
+    .joinpsc_container .baleWho .graphical_texts .graphical_bottom {
+      clip-path: polygon(0 0, 45vw 0, 60vw 100%, 15vw 100%);
+      background-color: rgba(206, 209, 13, 0.42);
+      padding-left: 15vw;
+      margin: 0;
+      min-height: 25vh; }
+      .joinpsc_container .baleWho .graphical_texts .graphical_bottom h1 {
+        color: #e7eb05;
+        font-size: 8.3rem;
+        font-weight: 400;
+        letter-spacing: 3px;
+        font-style: italic;
+        padding-top: 5rem; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .baleWho .graphical_texts .graphical_bottom h1 {
+            font-size: 5vw; } }
+      .joinpsc_container .baleWho .graphical_texts .graphical_bottom .botTwo {
+        color: #e7eb05;
+        font-size: 1.2rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+        line-height: 0.5rem;
+        padding-bottom: 4rem; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .baleWho .graphical_texts .graphical_bottom .botTwo {
+            font-size: 1vw;
+            line-height: 1.5vw;
+            margin-bottom: 2vw; } }
+    .joinpsc_container .baleWho .graphical_image {
+      position: absolute;
+      bottom: 0 !important;
+      right: 5vw;
+      max-width: 35vw; }
+      .joinpsc_container .baleWho .graphical_image img {
+        max-width: 100%;
+        height: auto; }
+  .joinpsc_container .messiWho {
+    position: relative;
+    margin: 0 auto; }
+    .joinpsc_container .messiWho .graphical_texts .graphical_top {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+      clip-path: polygon(15vw 0, 60vw 0, 60vw 100%, 15vw 100%);
+      min-height: 30vh;
+      width: 100%;
+      background-color: rgba(43, 43, 43, 0.52);
+      padding-left: 40vw; }
+      @media only screen and (max-width: 56.25em) {
+        .joinpsc_container .messiWho .graphical_texts .graphical_top {
+          padding-left: 20vw; } }
+      .joinpsc_container .messiWho .graphical_texts .graphical_top .topOne {
+        margin-top: 2rem; }
+        .joinpsc_container .messiWho .graphical_texts .graphical_top .topOne h2 {
+          color: #39d3db;
+          font-size: 2.8rem;
+          font-weight: 900;
+          letter-spacing: 3px;
+          line-height: 2.5vw;
+          text-align: right;
+          padding-right: 15vw; }
+          @media only screen and (max-width: 56.25em) {
+            .joinpsc_container .messiWho .graphical_texts .graphical_top .topOne h2 {
+              font-size: 3vw; } }
+      .joinpsc_container .messiWho .graphical_texts .graphical_top .topTwo {
+        font-size: 2rem;
+        font-weight: 300;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        line-height: 2rem; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .messiWho .graphical_texts .graphical_top .topTwo {
+            text-align: right;
+            font-size: 3vw;
+            line-height: 3vw;
+            padding-right: 15vw; } }
+      .joinpsc_container .messiWho .graphical_texts .graphical_top .topThree {
+        margin-bottom: 4rem;
+        font-size: 1.5rem;
+        font-weight: 300; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .messiWho .graphical_texts .graphical_top .topThree {
+            text-align: right;
+            padding-right: 15vw; } }
+      .joinpsc_container .messiWho .graphical_texts .graphical_top .topFour {
+        font-size: 1vw;
+        font-weight: 300;
+        line-height: 1vw; }
+      .joinpsc_container .messiWho .graphical_texts .graphical_top .topFive {
+        margin-bottom: 4rem;
+        font-size: 1.5rem;
+        font-weight: 300; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .messiWho .graphical_texts .graphical_top .topFive {
+            font-size: 1rem; } }
+    .joinpsc_container .messiWho .graphical_texts .graphical_bottom {
+      clip-path: polygon(15vw 0, 60vw 0, 45vw 100%, 0 100%);
+      background-color: rgba(206, 209, 13, 0.42);
+      padding-left: 30vw;
+      margin: 0;
+      min-height: 25vh; }
+      .joinpsc_container .messiWho .graphical_texts .graphical_bottom h1 {
+        color: #e7eb05;
+        font-size: 8.3rem;
+        font-weight: 400;
+        letter-spacing: 3px;
+        font-style: italic;
+        padding-top: 5rem; }
+      .joinpsc_container .messiWho .graphical_texts .graphical_bottom .botTwo {
+        color: #e7eb05;
+        font-size: 1.2rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+        line-height: 0.5rem;
+        padding-bottom: 4rem; }
+    .joinpsc_container .messiWho .graphical_image {
+      position: absolute;
+      bottom: 0 !important;
+      left: 4%;
+      max-width: 35vw; }
+      @media only screen and (max-width: 56.25em) {
+        .joinpsc_container .messiWho .graphical_image {
+          left: -10vw;
+          max-width: 55vw; } }
+      .joinpsc_container .messiWho .graphical_image img {
+        max-width: 100%;
+        height: auto; }
+  .joinpsc_container .robbenWho {
+    position: relative;
+    margin: 0 auto; }
+    .joinpsc_container .robbenWho .graphical_texts .graphical_top {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+      clip-path: polygon(15vw 0, 60vw 0, 60vw 100%, 15vw 100%);
+      min-height: 30vh;
+      width: 100%;
+      background-color: rgba(43, 43, 43, 0.52);
+      text-align: right;
+      padding-right: 13vw; }
+      @media only screen and (max-width: 56.25em) {
+        .joinpsc_container .robbenWho .graphical_texts .graphical_top {
+          padding-right: 25vw; } }
+      @media only screen and (max-width: 37.5em) {
+        .joinpsc_container .robbenWho .graphical_texts .graphical_top {
+          padding-right: 22vw;
+          line-height: 3rem; } }
+      .joinpsc_container .robbenWho .graphical_texts .graphical_top .topOne {
+        margin-top: 2rem; }
+        .joinpsc_container .robbenWho .graphical_texts .graphical_top .topOne h2 {
+          color: #39d3db;
+          font-size: 3vw;
+          font-weight: 900;
+          letter-spacing: 3px;
+          line-height: 2.5vw; }
+          @media only screen and (max-width: 56.25em) {
+            .joinpsc_container .robbenWho .graphical_texts .graphical_top .topOne h2 {
+              font-size: 3vw;
+              line-height: 1.5vw;
+              margin-bottom: 2vw; } }
+      .joinpsc_container .robbenWho .graphical_texts .graphical_top .topTwo {
+        font-size: 2vw;
+        font-weight: 300;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        line-height: 2rem; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .robbenWho .graphical_texts .graphical_top .topTwo {
+            font-size: 3vw;
+            line-height: 1.5vw;
+            margin-bottom: 2vw; } }
+      .joinpsc_container .robbenWho .graphical_texts .graphical_top .topThree {
+        margin-bottom: 4rem;
+        font-size: 1.5rem;
+        font-weight: 300; }
+      .joinpsc_container .robbenWho .graphical_texts .graphical_top .topFour {
+        font-size: 1vw;
+        font-weight: 300;
+        line-height: 1vw; }
+      .joinpsc_container .robbenWho .graphical_texts .graphical_top .topFive {
+        margin-bottom: 4rem;
+        font-size: 1.5rem;
+        font-weight: 300; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .robbenWho .graphical_texts .graphical_top .topFive {
+            font-size: 1rem; } }
+      .joinpsc_container .robbenWho .graphical_texts .graphical_top .top_image {
+        margin-top: 2rem; }
+        .joinpsc_container .robbenWho .graphical_texts .graphical_top .top_image img {
+          max-width: 100%;
+          height: auto; }
+    .joinpsc_container .robbenWho .graphical_texts .graphical_bottom {
+      clip-path: polygon(15vw 0, 60vw 0, 45vw 100%, 0 100%);
+      background-color: rgba(206, 209, 13, 0.42);
+      padding-left: 15vw;
+      margin: 0;
+      min-height: 25vh; }
+      @media only screen and (max-width: 56.25em) {
+        .joinpsc_container .robbenWho .graphical_texts .graphical_bottom {
+          padding-left: 18vw; } }
+      @media only screen and (max-width: 37.5em) {
+        .joinpsc_container .robbenWho .graphical_texts .graphical_bottom {
+          padding-left: 13vw; } }
+      .joinpsc_container .robbenWho .graphical_texts .graphical_bottom h1 {
+        color: #e7eb05;
+        font-size: 6vw;
+        font-weight: 400;
+        letter-spacing: 3px;
+        font-style: italic;
+        padding-top: 5rem; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .robbenWho .graphical_texts .graphical_bottom h1 {
+            font-size: 6vw; } }
+      .joinpsc_container .robbenWho .graphical_texts .graphical_bottom p {
+        color: #e7eb05;
+        font-size: 1vw;
+        font-weight: 300;
+        letter-spacing: 2px;
+        line-height: 0.5vw; }
+        .joinpsc_container .robbenWho .graphical_texts .graphical_bottom p:last-child {
+          padding-bottom: 4rem; }
+        @media only screen and (max-width: 56.25em) {
+          .joinpsc_container .robbenWho .graphical_texts .graphical_bottom p {
+            font-size: 1.8vw;
+            line-height: 1vw; } }
+    .joinpsc_container .robbenWho .graphical_image {
+      position: absolute;
+      bottom: 0 !important;
+      max-width: 35vw; }
+      @media only screen and (min-width: 75em) {
+        .joinpsc_container .robbenWho .graphical_image {
+          left: -10vw;
+          max-width: 45vw; } }
+      @media only screen and (max-width: 75em) {
+        .joinpsc_container .robbenWho .graphical_image {
+          left: 0vw;
+          max-width: 25vw; } }
+      @media only screen and (max-width: 56.25em) {
+        .joinpsc_container .robbenWho .graphical_image {
+          left: 45vw;
+          max-width: 45vw; } }
+      @media only screen and (max-width: 37.5em) {
+        .joinpsc_container .robbenWho .graphical_image {
+          left: 45vw;
+          max-width: 45vw; } }
+      .joinpsc_container .robbenWho .graphical_image img {
+        max-width: 100%;
+        height: auto; }
+  .joinpsc_container button {
+    width: auto;
+    padding: 1rem 2rem;
+    border: none;
+    background-color: #e7eb05;
+    border-radius: 50rem;
+    margin-bottom: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .joinpsc_container button {
+        min-width: 10rem;
+        height: 3rem;
+        padding: 0 2vw;
+        font-size: 2vw; } }
+
 .who_container {
   min-height: 100vh;
   width: 70%;
